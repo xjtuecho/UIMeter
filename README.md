@@ -2,6 +2,8 @@
 
 USB版本请访问[UIMeterUSB](https://github.com/xjtuecho/UIMeterUSB)。
 
+Mini版本请访问[UIMeterMini](https://github.com/xjtuecho/UIMeterMini)。
+
 PC监控软件UIMeterMon请访问[UIMeterMon](https://github.com/xjtuecho/UIMeterMON)。
 
 遇到问题，提问前请先查阅FAQ文档[UIMeterFAQ](DOC/UIMeterFAQ.md)。
