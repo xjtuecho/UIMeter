@@ -1,5 +1,9 @@
 ﻿UIMeter为高精度电压表、电流表、功率表、欧姆表、库仑计、电能表、秒表、温度计、放电仪。
 
+USB版本请访问[UIMeterUSB](https://github.com/xjtuecho/UIMeterUSB)。
+
+遇到问题，提问前请先查阅FAQ文档[UIMeterFAQ](DOC/UIMeterFAQ.md)。
+
 ## 主要特性：
 - 超宽电压范围：-9.9999V~99.9999V，安全起见建议36V以下使用。
 - 超高电压精度：标准版默认0.1mV分辨率，最高可达2uV。
@@ -23,9 +27,6 @@
 - USB母口D+D-外接功能：可将D+D-外接，以实现USB接口识别。
 - 友好的端子布局：TTL串口、跳线均为侧装，端子无凸出不易损坏，5.08-3PIN端子可拔掉备用；
   按键对面屏幕插针端子可为手指提供支撑，手感舒适。
-
-## USB版本
-请访问[UIMeterUSB](https://github.com/xjtuecho/UIMeterUSB)
 
 ## 购买链接
 - [UIMeter](https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-9102396040.3.7f52e377i5YWnF&id=42129824943)
