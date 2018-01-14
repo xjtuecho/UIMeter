@@ -1,12 +1,12 @@
 ﻿UIMeter为高精度电压表、电流表、功率表、欧姆表、库仑计、电能表、秒表、温度计、放电仪。
 
-USB版本请访问[UIMeterUSB](https://github.com/xjtuecho/UIMeterUSB)。
-
-Mini版本请访问[UIMeterMini](https://github.com/xjtuecho/UIMeterMini)。
-
-PC监控软件UIMeterMon请访问[UIMeterMon](https://github.com/xjtuecho/UIMeterMON)。
-
-遇到问题，提问前请先查阅FAQ文档[UIMeterFAQ](DOC/UIMeterFAQ.md)。
+## 资料汇总：
+- 完整用户手册请访问文档：[UIMeterUserManual](DOC/UIMeterUserManual.md)
+- 命令行手册请访问文档：[UIMeterCmdRef](DOC/UIMeterCmdRef.md)
+- USB版本请访问项目：[UIMeterUSB](https://github.com/xjtuecho/UIMeterUSB)
+- Mini版本请访问项目：[UIMeterMini](https://github.com/xjtuecho/UIMeterMini)
+- PC监控软件UIMeterMon请访问项目：[UIMeterMon](https://github.com/xjtuecho/UIMeterMON)
+- 提问前请先查阅FAQ文档：[UIMeterFAQ](DOC/UIMeterFAQ.md)。
 
 ## 主要特性：
 - 超宽电压范围：-9.9999V~99.9999V，安全起见建议36V以下使用。
