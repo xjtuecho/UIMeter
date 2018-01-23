@@ -1,4 +1,4 @@
-﻿UIMeter为高精度电压表、电流表、功率表、欧姆表、库仑计、电能表、秒表、温度计、放电仪。
+UIMeter为高精度电压表、电流表、功率表、欧姆表、库仑计、电能表、秒表、温度计、放电仪。
 
 ## 资料汇总：
 - 完整用户手册请访问文档：[UIMeterUserManual](DOC/UIMeterUserManual.md)
