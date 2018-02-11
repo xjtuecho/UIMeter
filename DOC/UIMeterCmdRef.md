@@ -1,25 +1,25 @@
-# UIMeterÃüÁîÐÐÊÖ²á
+# UIMeterå‘½ä»¤è¡Œæ‰‹å†Œ
 
-UIMeterÄÚÖÃÒ»¸öÃüÁî½âÊÍÆ÷£¬¿ÉÒÔÍ¨¹ý³¬¼¶ÖÕ¶Ë£¨»òÕßPutty¡¢SecrueCRT£©µÈÈí¼þÀ´Á¬½Ó¡£
-Á¬½ÓÒÔºó¿ÉÒÔÍ¨¹ý´®¿ÚÊ¹ÓÃUIMeterÈ«²¿¹¦ÄÜ¡£Ê¹ÓÃ´®¿ÚÃüÁîÖ®Ç°£¬ÐèÒªÇÐ»»Í¨Ñ¶Ð­Òéµ½
-TERMÐ­Òé£¬ÇÐ»»·½·¨Çë²Î¿¼UIMeterÓÃ»§ÊÖ²á¡£
+UIMeterå†…ç½®ä¸€ä¸ªå‘½ä»¤è§£é‡Šå™¨ï¼Œå¯ä»¥é€šè¿‡è¶…çº§ç»ˆç«¯ï¼ˆæˆ–è€…Puttyã€SecrueCRTï¼‰ç­‰è½¯ä»¶æ¥è¿žæŽ¥ã€‚
+è¿žæŽ¥ä»¥åŽå¯ä»¥é€šè¿‡ä¸²å£ä½¿ç”¨UIMeterå…¨éƒ¨åŠŸèƒ½ã€‚ä½¿ç”¨ä¸²å£å‘½ä»¤ä¹‹å‰ï¼Œéœ€è¦åˆ‡æ¢é€šè®¯åè®®åˆ°
+TERMåè®®ï¼Œåˆ‡æ¢æ–¹æ³•è¯·å‚è€ƒUIMeterç”¨æˆ·æ‰‹å†Œã€‚
 
-´®¿Ú²ÎÊýÈçÏÂËùÊ¾£º
+ä¸²å£å‚æ•°å¦‚ä¸‹æ‰€ç¤ºï¼š
 
-![MODBUS´®¿Ú²ÎÊý](image/51-MODBUS´®¿Ú²ÎÊý.png "MODBUS´®¿Ú²ÎÊý")
+![MODBUSä¸²å£å‚æ•°](image/51-MODBUSä¸²å£å‚æ•°.png "MODBUSä¸²å£å‚æ•°")
 
-²¨ÌØÂÊ115200¡¢8Î»Êý¾Ý¡¢1Î»Í£Ö¹¡¢ÎÞÐ£Ñé¡¢ÎÞÁ÷¿Ø¡£
+æ³¢ç‰¹çŽ‡115200ã€8ä½æ•°æ®ã€1ä½åœæ­¢ã€æ— æ ¡éªŒã€æ— æµæŽ§ã€‚
  
-±¾ÎÄµµ»ùÓÚUIMeter¹Ì¼þv17.7.1£¬ÆäÓà¹Ì¼þ°æ±¾½ö¹©²Î¿¼¡£
+æœ¬æ–‡æ¡£åŸºäºŽUIMeterå›ºä»¶v17.7.1ï¼Œå…¶ä½™å›ºä»¶ç‰ˆæœ¬ä»…ä¾›å‚è€ƒã€‚
 
-Ëæ×ÅÐÂ¹Ì¼þ·¢²¼£¬Ïà¹ØÃüÁî¿ÉÄÜ»áÓÐµ÷Õû£¬Ë¡²»ÁíÐÐÍ¨Öª¡£
+éšç€æ–°å›ºä»¶å‘å¸ƒï¼Œç›¸å…³å‘½ä»¤å¯èƒ½ä¼šæœ‰è°ƒæ•´ï¼Œæ•ä¸å¦è¡Œé€šçŸ¥ã€‚
 
 ## getui
-»ñÈ¡µ±Ç°µçÑ¹¡¢µçÁ÷¡¢Ê±¼ä¡¢¹¦ÂÊ¡¢µçÁ¿µÈÐÅÏ¢¡£
+èŽ·å–å½“å‰ç”µåŽ‹ã€ç”µæµã€æ—¶é—´ã€åŠŸçŽ‡ã€ç”µé‡ç­‰ä¿¡æ¯ã€‚
 
-ÃüÁî¸ñÊ½£º`getui`
+å‘½ä»¤æ ¼å¼ï¼š`getui`
 
-ÃüÁîÊä³öÈçÏÂËùÊ¾£º
+å‘½ä»¤è¾“å‡ºå¦‚ä¸‹æ‰€ç¤ºï¼š
 ```
 getui
  U: PGA=8 AD=0x000003  0.0000V 0.0000W      1uV
@@ -27,25 +27,25 @@ getui
  T: RAW=0x1600  22.0C   22.0C
  P: 0.0000Ah  0.0000Wh     32s
 ```
-µÚÈý·½¹¤¾ß¿ÉÒÔÊ¹ÓÃ¸ÃÃüÁî²É¼¯µ±Ç°Êý¾Ý¡£
+ç¬¬ä¸‰æ–¹å·¥å…·å¯ä»¥ä½¿ç”¨è¯¥å‘½ä»¤é‡‡é›†å½“å‰æ•°æ®ã€‚
 
-µÚÈý·½Èí¼þ¿ÉÒÔÍ¨¹ýÖ´ÐÐ¸ÃÃüÁî²éÑ¯Éè±¸ÊµÊ±Êý¾Ý£¬¿ÉÒÔ¹Ø±ÕÃüÁî»ØÏÔ£¬½µµÍµÚÈý·½Èí¼þ±àÐ´ÄÑ¶È¡£
+ç¬¬ä¸‰æ–¹è½¯ä»¶å¯ä»¥é€šè¿‡æ‰§è¡Œè¯¥å‘½ä»¤æŸ¥è¯¢è®¾å¤‡å®žæ—¶æ•°æ®ï¼Œå¯ä»¥å…³é—­å‘½ä»¤å›žæ˜¾ï¼Œé™ä½Žç¬¬ä¸‰æ–¹è½¯ä»¶ç¼–å†™éš¾åº¦ã€‚
 
 ## clear
-Çå³ýÉè±¸µ±Ç°Ê±¼äºÍµçÁ¿ÐÅÏ¢¡£
+æ¸…é™¤è®¾å¤‡å½“å‰æ—¶é—´å’Œç”µé‡ä¿¡æ¯ã€‚
 
-ÃüÁî¸ñÊ½£º`clear`¡£
+å‘½ä»¤æ ¼å¼ï¼š`clear`ã€‚
 
-Éè±¸ÉÏµçÒÔºó£¬ÔËÐÐÊ±¼äºÍAhµçÁ¿¡¢WhµçÁ¿»áÒ»Ö±ÀÛ¼Æ£¬Ö´ÐÐ¸ÃÃüÁîÒÔºó£¬ÔËÐÐÊ±¼ä¡¢AhµçÁ¿¡¢WhµçÁ¿È«²¿¹éÁã¡£
-ÆäÓàÊý¾ÝÎªÊµÊ±¸üÐÂ£¬¸ÃÃüÁîÎÞÓ°Ïì¡£
+è®¾å¤‡ä¸Šç”µä»¥åŽï¼Œè¿è¡Œæ—¶é—´å’ŒAhç”µé‡ã€Whç”µé‡ä¼šä¸€ç›´ç´¯è®¡ï¼Œæ‰§è¡Œè¯¥å‘½ä»¤ä»¥åŽï¼Œè¿è¡Œæ—¶é—´ã€Ahç”µé‡ã€Whç”µé‡å…¨éƒ¨å½’é›¶ã€‚
+å…¶ä½™æ•°æ®ä¸ºå®žæ—¶æ›´æ–°ï¼Œè¯¥å‘½ä»¤æ— å½±å“ã€‚
 
 ## log
-²Ù×÷ÀëÏßÊý¾Ý¡£
+æ“ä½œç¦»çº¿æ•°æ®ã€‚
 
-ÃüÁî¸ñÊ½£º`log [dump|max|int|ring|auto|uh|ul|ih|il] Operate data logs.`
+å‘½ä»¤æ ¼å¼ï¼š`log [dump|max|int|ring|auto|uh|ul|ih|il] Operate data logs.`
 
-²»´ø²ÎÊýµÄlogÃüÁîÊä³öµ±Ç°ÉèÖÃ£¬ÒÀ´ÎÏÔÊ¾Êý¾Ý×î´ó¼ÇÂ¼ÌõÊý¡¢¼ÇÂ¼¼ä¸ô¡¢RINGÄ£Ê½¿ª¹Ø¡¢
-AUTOÄ£Ê½¿ª¹Ø£¬UH¡¢UL¡¢IH¡¢ILËÄ¸ö²ÎÊý¡£¾ßÌåÒâÒå¼ûÒÔÏÂ×ÓÃüÁîËµÃ÷¡£
+ä¸å¸¦å‚æ•°çš„logå‘½ä»¤è¾“å‡ºå½“å‰è®¾ç½®ï¼Œä¾æ¬¡æ˜¾ç¤ºæ•°æ®æœ€å¤§è®°å½•æ¡æ•°ã€è®°å½•é—´éš”ã€RINGæ¨¡å¼å¼€å…³ã€
+AUTOæ¨¡å¼å¼€å…³ï¼ŒUHã€ULã€IHã€ILå››ä¸ªå‚æ•°ã€‚å…·ä½“æ„ä¹‰è§ä»¥ä¸‹å­å‘½ä»¤è¯´æ˜Žã€‚
 ```
 log
 log [dump|max|int|ring|auto|uh|ul|ih|il] Operate data logs.
@@ -58,11 +58,11 @@ log [dump|max|int|ring|auto|uh|ul|ih|il] Operate data logs.
 ```
 
 ### log dump
-log dump×ÓÃüÁîÓÃÀ´µ¼³öÀëÏßÊý¾Ý¡£
+log dumpå­å‘½ä»¤ç”¨æ¥å¯¼å‡ºç¦»çº¿æ•°æ®ã€‚
 
-ÃüÁî¸ñÊ½£º`log dump [Êý¾ÝÌõÊý]`¡£
+å‘½ä»¤æ ¼å¼ï¼š`log dump [æ•°æ®æ¡æ•°]`ã€‚
 
-Êý¾ÝÌõÊýÓ¦¸ÃÐ¡ÓÚÉè±¸×î´ó¼ÇÂ¼ÌõÊý¡£µ¼³ö10ÌõÊý¾ÝÈçÏÂ£º
+æ•°æ®æ¡æ•°åº”è¯¥å°äºŽè®¾å¤‡æœ€å¤§è®°å½•æ¡æ•°ã€‚å¯¼å‡º10æ¡æ•°æ®å¦‚ä¸‹ï¼š
 ```
 log dump 10
     i,    t(s),    U(V),    I(A), Tself, Tprob
@@ -78,85 +78,85 @@ log dump 10
     9,      20,  0.0000,  0.0000,  26.5,  26.5
 ```
 
-µÚÒ»ÁÐÎªÊý¾ÝË÷Òý£¬
-µÚ¶þÁÐÎªÉè±¸¼ÇÂ¼Êý¾ÝÊ±µÄÏà¶ÔÊ±¼ä£¨µ¥Î»Ãë£©£¬
-µÚÈýÁÐÎªµçÑ¹£¨ÆôÓÃ·ÖÁ÷Æ÷²âÁ¿¹¦ÄÜÒÔºóÎª·ÖÁ÷Æ÷µçÁ÷£©£¬
-µÚËÄÁÐÎªµçÁ÷£¬
-µÚÎåÁÐÎªÀä¶ËÎÂ¶È£¨»·ÎÂ£©£¬
-µÚÁùÁÐÎªÌ½Í·ÎÂ¶È£¨KÐÍÈÈµçÅ¼²âÎÂÊ±ÓÐÒâÒå£©
+ç¬¬ä¸€åˆ—ä¸ºæ•°æ®ç´¢å¼•ï¼Œ
+ç¬¬äºŒåˆ—ä¸ºè®¾å¤‡è®°å½•æ•°æ®æ—¶çš„ç›¸å¯¹æ—¶é—´ï¼ˆå•ä½ç§’ï¼‰ï¼Œ
+ç¬¬ä¸‰åˆ—ä¸ºç”µåŽ‹ï¼ˆå¯ç”¨åˆ†æµå™¨æµ‹é‡åŠŸèƒ½ä»¥åŽä¸ºåˆ†æµå™¨ç”µæµï¼‰ï¼Œ
+ç¬¬å››åˆ—ä¸ºç”µæµï¼Œ
+ç¬¬äº”åˆ—ä¸ºå†·ç«¯æ¸©åº¦ï¼ˆçŽ¯æ¸©ï¼‰ï¼Œ
+ç¬¬å…­åˆ—ä¸ºæŽ¢å¤´æ¸©åº¦ï¼ˆKåž‹çƒ­ç”µå¶æµ‹æ¸©æ—¶æœ‰æ„ä¹‰ï¼‰
  
-¿ÉÒÔ½èÖú³¬¼¶ÖÕ¶Ë²¶»ñÎÄ×Ö¹¦ÄÜ±£´æÀëÏßÊý¾Ý¡£²Ëµ¥£º´«ËÍ(T)->²¶»ñÎÄ×Ö(C)¡­
-´ò¿ª³¬¼¶ÖÕ¶ËµÄ²¶»ñÎÄ×Ö¹¦ÄÜ£¬Æô¶¯²¶»ñÎÄ×Ö£¬Ö´ÐÐÍêlog dumpÃüÁî£¬È»ºóÍ£Ö¹¡£
-±£´æÀëÏß¼ÇÂ¼Êý¾Ý¡£
+å¯ä»¥å€ŸåŠ©è¶…çº§ç»ˆç«¯æ•èŽ·æ–‡å­—åŠŸèƒ½ä¿å­˜ç¦»çº¿æ•°æ®ã€‚èœå•ï¼šä¼ é€(T)->æ•èŽ·æ–‡å­—(C)â€¦
+æ‰“å¼€è¶…çº§ç»ˆç«¯çš„æ•èŽ·æ–‡å­—åŠŸèƒ½ï¼Œå¯åŠ¨æ•èŽ·æ–‡å­—ï¼Œæ‰§è¡Œå®Œlog dumpå‘½ä»¤ï¼Œç„¶åŽåœæ­¢ã€‚
+ä¿å­˜ç¦»çº¿è®°å½•æ•°æ®ã€‚
  
-![³¬¼¶ÖÕ¶Ë²¶»ñÎÄ×Ö](image/55-³¬¼¶ÖÕ¶Ë²¶»ñÎÄ×Ö.png "³¬¼¶ÖÕ¶Ë²¶»ñÎÄ×Ö")
+![è¶…çº§ç»ˆç«¯æ•èŽ·æ–‡å­—](image/55-è¶…çº§ç»ˆç«¯æ•èŽ·æ–‡å­—.png "è¶…çº§ç»ˆç«¯æ•èŽ·æ–‡å­—")
 
-ÀëÏßÊý¾Ý¸ñÊ½ÎªCSVÎÄ¼þ£¬¿ÉÒÔÊ¹ÓÃExcel»òÕßÈÎÒâÒ»¿îÎÄ±¾±à¼­Æ÷±à¼­¡£
+ç¦»çº¿æ•°æ®æ ¼å¼ä¸ºCSVæ–‡ä»¶ï¼Œå¯ä»¥ä½¿ç”¨Excelæˆ–è€…ä»»æ„ä¸€æ¬¾æ–‡æœ¬ç¼–è¾‘å™¨ç¼–è¾‘ã€‚
 
-v17.5.11¹Ì¼þÔö¼Ó·ÖÁ÷Æ÷µçÁ÷²âÁ¿¹¦ÄÜ£¬ÆôÓÃ·ÖÁ÷Æ÷µçÁ÷²âÁ¿¹¦ÄÜÒÔºó£¬Ô­µçÑ¹µµ¼ÇÂ¼Êý¾ÝÎª·ÖÁ÷Æ÷µçÁ÷¡£
+v17.5.11å›ºä»¶å¢žåŠ åˆ†æµå™¨ç”µæµæµ‹é‡åŠŸèƒ½ï¼Œå¯ç”¨åˆ†æµå™¨ç”µæµæµ‹é‡åŠŸèƒ½ä»¥åŽï¼ŒåŽŸç”µåŽ‹æ¡£è®°å½•æ•°æ®ä¸ºåˆ†æµå™¨ç”µæµã€‚
 
 ### log max
-ÉèÖÃ×î´ó¼ÇÂ¼ÌõÊý¡£
+è®¾ç½®æœ€å¤§è®°å½•æ¡æ•°ã€‚
 
-UIMeter¾ß±¸2048ºÍ4096Á½ÖÖÀëÏß¼ÇÂ¼ÌõÊý¡£¿ÉÒÔÊ¹ÓÃlog maxÃüÁîÉèÖÃ×î´ó¼ÇÂ¼Êý¾Ý¡£
+UIMeterå…·å¤‡2048å’Œ4096ä¸¤ç§ç¦»çº¿è®°å½•æ¡æ•°ã€‚å¯ä»¥ä½¿ç”¨log maxå‘½ä»¤è®¾ç½®æœ€å¤§è®°å½•æ•°æ®ã€‚
 ```
 log max 2
  Set Max data log to  2048
 log max 4
  Set Max data log to  4096
 ```
-×î´ó¼ÇÂ¼ÌõÊýÐèÒªºÍÊµ¼ÊÉè±¸ÅäÖÃµÄEEPROMÈÝÁ¿Æ¥Åä£¬32kB¶ÔÓ¦2048Ìõ£¬64kB¶ÔÓ¦4096Ìõ¡£
+æœ€å¤§è®°å½•æ¡æ•°éœ€è¦å’Œå®žé™…è®¾å¤‡é…ç½®çš„EEPROMå®¹é‡åŒ¹é…ï¼Œ32kBå¯¹åº”2048æ¡ï¼Œ64kBå¯¹åº”4096æ¡ã€‚
 
-ÉèÖÃ×î´ó¼ÇÂ¼ÌõÊýÎª2048£º`log max 2`
+è®¾ç½®æœ€å¤§è®°å½•æ¡æ•°ä¸º2048ï¼š`log max 2`
 
-ÉèÖÃ×î´ó¼ÇÂ¼ÌõÊýÎª4096£º`log max 4`
+è®¾ç½®æœ€å¤§è®°å½•æ¡æ•°ä¸º4096ï¼š`log max 4`
 
-ÉèÖÃÒÔºóÁ¢¼´ÉúÐ§£¬±£´æ²ÎÊýÐèÒªÖ´ÐÐ`param save`ÃüÁî¡£
+è®¾ç½®ä»¥åŽç«‹å³ç”Ÿæ•ˆï¼Œä¿å­˜å‚æ•°éœ€è¦æ‰§è¡Œ`param save`å‘½ä»¤ã€‚
 
 ### log int
-ÉèÖÃÀëÏß¼ÇÂ¼¼ä¸ô£¬µ¥Î»Ãë£¬Èç£º`log int 10`£¬ÉèÖÃÀëÏß¼ÇÂ¼¼ä¸ôÎª10ÃëÃ¿´Î¡£×î´ó¼ä¸ô65535Ãë¡£
+è®¾ç½®ç¦»çº¿è®°å½•é—´éš”ï¼Œå•ä½ç§’ï¼Œå¦‚ï¼š`log int 10`ï¼Œè®¾ç½®ç¦»çº¿è®°å½•é—´éš”ä¸º10ç§’æ¯æ¬¡ã€‚æœ€å¤§é—´éš”65535ç§’ã€‚
 
-ÉèÖÃÒÔºóÁ¢¼´ÉúÐ§£¬±£´æ²ÎÊýÐèÒªÖ´ÐÐ`param save`ÃüÁî¡£
+è®¾ç½®ä»¥åŽç«‹å³ç”Ÿæ•ˆï¼Œä¿å­˜å‚æ•°éœ€è¦æ‰§è¡Œ`param save`å‘½ä»¤ã€‚
 
 ### log ring
-´ò¿ª»òÕß¹Ø±ÕRINGÄ£Ê½¡£
+æ‰“å¼€æˆ–è€…å…³é—­RINGæ¨¡å¼ã€‚
 
-Ä¬ÈÏÄ£Ê½ÏÂ£¬¼ÇÂ¼Êý¾Ý´ïµ½×î´óÒÔºóÍ£Ö¹¼ÇÂ¼£¬Í¨¹ý´ò¿ªRINGÄ£Ê½£¬¿ÉÒÔÊ¹Êý¾Ý´ïµ½×î´ó
-ÒÔºó×Ô¶¯´Ó0¿ªÊ¼¼ÇÂ¼£¬¸²¸Ç¾ÉÊý¾Ý¡£¸Ã·½·¨¿ÉÒÔÓÃÓÚÑ­»·¼ÇÂ¼£¬¸ú×Ù×îÐÂµÄ²âÊÔÊý¾Ý¡£
+é»˜è®¤æ¨¡å¼ä¸‹ï¼Œè®°å½•æ•°æ®è¾¾åˆ°æœ€å¤§ä»¥åŽåœæ­¢è®°å½•ï¼Œé€šè¿‡æ‰“å¼€RINGæ¨¡å¼ï¼Œå¯ä»¥ä½¿æ•°æ®è¾¾åˆ°æœ€å¤§
+ä»¥åŽè‡ªåŠ¨ä»Ž0å¼€å§‹è®°å½•ï¼Œè¦†ç›–æ—§æ•°æ®ã€‚è¯¥æ–¹æ³•å¯ä»¥ç”¨äºŽå¾ªçŽ¯è®°å½•ï¼Œè·Ÿè¸ªæœ€æ–°çš„æµ‹è¯•æ•°æ®ã€‚
 
-Ê¹ÓÃ`log ring 1`ÃüÁî´ò¿ªRINGÄ£Ê½£¬Ê¹ÓÃ`log ring 0`ÃüÁî¹Ø±ÕRINGÄ£Ê½¡£
+ä½¿ç”¨`log ring 1`å‘½ä»¤æ‰“å¼€RINGæ¨¡å¼ï¼Œä½¿ç”¨`log ring 0`å‘½ä»¤å…³é—­RINGæ¨¡å¼ã€‚
 
-ÉèÖÃÒÔºóÁ¢¼´ÉúÐ§£¬±£´æ²ÎÊýÐèÒªÖ´ÐÐ`param save`ÃüÁî¡£
+è®¾ç½®ä»¥åŽç«‹å³ç”Ÿæ•ˆï¼Œä¿å­˜å‚æ•°éœ€è¦æ‰§è¡Œ`param save`å‘½ä»¤ã€‚
 
 ### log auto
-´ò¿ª»òÕß¹Ø±ÕAUTOÄ£Ê½¡£
+æ‰“å¼€æˆ–è€…å…³é—­AUTOæ¨¡å¼ã€‚
 
-Ä¬ÈÏÇé¿öÏÂ£¬Êý¾ÝÀëÏß¼ÇÂ¼¹¦ÄÜÐèÒªÓÃ»§À´ÊÖ¶¯Æô¶¯¡£Èç¹ûÓÃ»§ÐèÒªÍ¬²½²É¼¯Ä³Ð©Á¿£¬
-¶àÌ¨UIMeterÖ®¼äºÜÄÑÍê³ÉÍ¬²½Æô¶¯²É¼¯£¬ Òò´Ë¿ÉÒÔ´ò¿ªAUTOÄ£Ê½£¬UIMeterÉÏµçÒÔºó
-×Ô¶¯¿ªÊ¼¼ÇÂ¼Êý¾Ý¡£Í¨¹ý¸ø¶àÌ¨UIMeterÍ¬Ê±ÉÏµçÀ´Íê³ÉÊý¾ÝÍ¬²½²É¼¯¡£
+é»˜è®¤æƒ…å†µä¸‹ï¼Œæ•°æ®ç¦»çº¿è®°å½•åŠŸèƒ½éœ€è¦ç”¨æˆ·æ¥æ‰‹åŠ¨å¯åŠ¨ã€‚å¦‚æžœç”¨æˆ·éœ€è¦åŒæ­¥é‡‡é›†æŸäº›é‡ï¼Œ
+å¤šå°UIMeterä¹‹é—´å¾ˆéš¾å®ŒæˆåŒæ­¥å¯åŠ¨é‡‡é›†ï¼Œ å› æ­¤å¯ä»¥æ‰“å¼€AUTOæ¨¡å¼ï¼ŒUIMeterä¸Šç”µä»¥åŽ
+è‡ªåŠ¨å¼€å§‹è®°å½•æ•°æ®ã€‚é€šè¿‡ç»™å¤šå°UIMeteråŒæ—¶ä¸Šç”µæ¥å®Œæˆæ•°æ®åŒæ­¥é‡‡é›†ã€‚
 
-Ê¹ÓÃ`log auto 1`ÃüÁî´ò¿ª×Ô¶¯¼ÇÂ¼¹¦ÄÜ£¬Ê¹ÓÃ`log auto 0`ÃüÁî¹Ø±Õ×Ô¶¯¼ÇÂ¼¹¦ÄÜ¡£
+ä½¿ç”¨`log auto 1`å‘½ä»¤æ‰“å¼€è‡ªåŠ¨è®°å½•åŠŸèƒ½ï¼Œä½¿ç”¨`log auto 0`å‘½ä»¤å…³é—­è‡ªåŠ¨è®°å½•åŠŸèƒ½ã€‚
 
-ÉèÖÃÒÔºóÁ¢¼´ÉúÐ§£¬±£´æ²ÎÊýÐèÒªÖ´ÐÐ`param save`ÃüÁî¡£
+è®¾ç½®ä»¥åŽç«‹å³ç”Ÿæ•ˆï¼Œä¿å­˜å‚æ•°éœ€è¦æ‰§è¡Œ`param save`å‘½ä»¤ã€‚
 
 ### log [uh|ul|ih|il]
-Éè¶¨UH¡¢UL¡¢IH¡¢ILËÄ¸ö²ÎÊý¡£
+è®¾å®šUHã€ULã€IHã€ILå››ä¸ªå‚æ•°ã€‚
 
-ËÄ¸ö²ÎÊý¾ö¶¨ÀëÏß¼ÇÂ¼µÄÌõ¼þ¡£UHºÍULÉè¶¨µçÑ¹ÉÏÏÞºÍÏÂÏÞ£¬IHºÍILÉè¶¨µçÁ÷ÉÏÏÞºÍÏÂÏÞ¡£
+å››ä¸ªå‚æ•°å†³å®šç¦»çº¿è®°å½•çš„æ¡ä»¶ã€‚UHå’ŒULè®¾å®šç”µåŽ‹ä¸Šé™å’Œä¸‹é™ï¼ŒIHå’ŒILè®¾å®šç”µæµä¸Šé™å’Œä¸‹é™ã€‚
 
-¼ÇÂ¼¹æÔòÈçÏÂ£º
+è®°å½•è§„åˆ™å¦‚ä¸‹ï¼š
 
- 1. UH>UL¡£µçÑ¹ÉÏÏÞ¸ßÓÚµçÑ¹ÏÂÏÞ£¬Êµ¼ÊµçÑ¹¸ßÓÚÏÂÏÞ²¢ÇÒµÍÓÚÉÏÏÞÊ±¼ÇÂ¼Êý¾Ý¡£
- 2. UH<UL¡£µçÑ¹ÉÏÏÞµÍÓÚµçÑ¹ÏÂÏÞ£¬Êµ¼ÊµçÑ¹¸ßÓÚÏÂÏÞ»òÕßµÍÓÚÉÏÏÞÊ±¼ÇÂ¼Êý¾Ý¡£
- 3. UH=UL¡£µçÑ¹ÉÏÏÞµÈÓÚµçÑ¹ÏÂÏÞ£¬ÀëÏß¼ÇÂ¼Êý¾ÝºÍµçÑ¹ÎÞ¹Ø£¬Ö»ÓëµçÁ÷ÓÐ¹Ø¡£
- 4. IH>IL¡£µçÁ÷ÉÏÏÞ¸ßÓÚµçÁ÷ÏÂÏÞ£¬Êµ¼ÊµçÁ÷¸ßÓÚÏÂÏÞ²¢ÇÒµÍÓÚÉÏÏÞÊ±¼ÇÂ¼Êý¾Ý¡£
- 5. IH<IL¡£µçÁ÷ÉÏÏÞµÍÓÚµçÁ÷ÏÂÏÞ£¬Êµ¼ÊµçÁ÷¸ßÓÚÏÂÏÞ»òÕßµÍÓÚÉÏÏÞÊ±¼ÇÂ¼Êý¾Ý¡£
- 6. IH=IL¡£µçÁ÷ÉÏÏÞµÈÓÚµçÁ÷ÏÂÏÞ£¬ÀëÏß¼ÇÂ¼Êý¾ÝºÍµçÑ¹µçÁ÷¾ùÎÞ¹Ø£¬¼´È«²¿¼ÇÂ¼¡£
+ 1. UH>ULã€‚ç”µåŽ‹ä¸Šé™é«˜äºŽç”µåŽ‹ä¸‹é™ï¼Œå®žé™…ç”µåŽ‹é«˜äºŽä¸‹é™å¹¶ä¸”ä½ŽäºŽä¸Šé™æ—¶è®°å½•æ•°æ®ã€‚
+ 2. UH<ULã€‚ç”µåŽ‹ä¸Šé™ä½ŽäºŽç”µåŽ‹ä¸‹é™ï¼Œå®žé™…ç”µåŽ‹é«˜äºŽä¸‹é™æˆ–è€…ä½ŽäºŽä¸Šé™æ—¶è®°å½•æ•°æ®ã€‚
+ 3. UH=ULã€‚ç”µåŽ‹ä¸Šé™ç­‰äºŽç”µåŽ‹ä¸‹é™ï¼Œç¦»çº¿è®°å½•æ•°æ®å’Œç”µåŽ‹æ— å…³ï¼Œåªä¸Žç”µæµæœ‰å…³ã€‚
+ 4. IH>ILã€‚ç”µæµä¸Šé™é«˜äºŽç”µæµä¸‹é™ï¼Œå®žé™…ç”µæµé«˜äºŽä¸‹é™å¹¶ä¸”ä½ŽäºŽä¸Šé™æ—¶è®°å½•æ•°æ®ã€‚
+ 5. IH<ILã€‚ç”µæµä¸Šé™ä½ŽäºŽç”µæµä¸‹é™ï¼Œå®žé™…ç”µæµé«˜äºŽä¸‹é™æˆ–è€…ä½ŽäºŽä¸Šé™æ—¶è®°å½•æ•°æ®ã€‚
+ 6. IH=ILã€‚ç”µæµä¸Šé™ç­‰äºŽç”µæµä¸‹é™ï¼Œç¦»çº¿è®°å½•æ•°æ®å’Œç”µåŽ‹ç”µæµå‡æ— å…³ï¼Œå³å…¨éƒ¨è®°å½•ã€‚
 
-×¢Òâ£¬UH¡¢UL¡¢IH¡¢ILÎªÔÚÔ­À´ÊÖ¶¯¼ÇÂ¼»ù´¡ÉÏÔö¼ÓµÄËÄ¸öÌõ¼þ£¬ÉèÖÃÒÔºóÈÔÈ»ÐèÒªÊÖ¶¯
-ÆôÍ£¼ÇÂ¼£¬Èç¹û²»Ê¹ÓÃÐèÒªÈ«²¿ÉèÖÃÎª0.
+æ³¨æ„ï¼ŒUHã€ULã€IHã€ILä¸ºåœ¨åŽŸæ¥æ‰‹åŠ¨è®°å½•åŸºç¡€ä¸Šå¢žåŠ çš„å››ä¸ªæ¡ä»¶ï¼Œè®¾ç½®ä»¥åŽä»ç„¶éœ€è¦æ‰‹åŠ¨
+å¯åœè®°å½•ï¼Œå¦‚æžœä¸ä½¿ç”¨éœ€è¦å…¨éƒ¨è®¾ç½®ä¸º0.
 
-ÉèÖÃÃüÁî¾ÙÀý²Î¿¼ÈçÏÂ£º
+è®¾ç½®å‘½ä»¤ä¸¾ä¾‹å‚è€ƒå¦‚ä¸‹ï¼š
 ```
 log uh 0
  set UH= 0.0000V
@@ -175,18 +175,18 @@ log [dump|max|int|ring|auto|uh|ul|ih|il] Operate data logs.
  UH= 0.0000V UL= 0.0000V
  IH= 2.0000A IL= 1.0000A
 ```
-µçÁ÷´óÓÚ1AÐ¡ÓÚ2AÊ±¼ÇÂ¼ÀëÏßÊý¾Ý£ºUH=UL=0V£¬IH=2A£¬IL=1A¡£
+ç”µæµå¤§äºŽ1Aå°äºŽ2Aæ—¶è®°å½•ç¦»çº¿æ•°æ®ï¼šUH=UL=0Vï¼ŒIH=2Aï¼ŒIL=1Aã€‚
 
-µçÑ¹¸ßÓÚ10VÊ±¼ÇÂ¼ÀëÏßÊý¾Ý£ºUH=0V£¬UL=10V£¬IH=0A£¬IL=0A¡£
+ç”µåŽ‹é«˜äºŽ10Væ—¶è®°å½•ç¦»çº¿æ•°æ®ï¼šUH=0Vï¼ŒUL=10Vï¼ŒIH=0Aï¼ŒIL=0Aã€‚
 
-ÉèÖÃÒÔºóÁ¢¼´ÉúÐ§£¬±£´æ²ÎÊýÐèÒªÖ´ÐÐ¡°param save¡±ÃüÁî¡£
+è®¾ç½®ä»¥åŽç«‹å³ç”Ÿæ•ˆï¼Œä¿å­˜å‚æ•°éœ€è¦æ‰§è¡Œâ€œparam saveâ€å‘½ä»¤ã€‚
 
 ## info
-²é¿´»òÕßÉèÖÃÉè±¸²ÎÊý¡£
+æŸ¥çœ‹æˆ–è€…è®¾ç½®è®¾å¤‡å‚æ•°ã€‚
 
-ÃüÁî¸ñÊ½£º`info [dev|lcd|probe|addr|alarm|baud] Display/Set system Info.`
+å‘½ä»¤æ ¼å¼ï¼š`info [dev|lcd|probe|addr|alarm|baud] Display/Set system Info.`
 
-²»´ø²ÎÊýµÄinfoÃüÁî»ñÈ¡Éè±¸²ÎÊý¡£
+ä¸å¸¦å‚æ•°çš„infoå‘½ä»¤èŽ·å–è®¾å¤‡å‚æ•°ã€‚
 ```
 info
  info [dev|lcd|probe|addr|alarm|baud] Display/Set system Info.
@@ -199,78 +199,78 @@ info
  ECHO:1
  BackLight: 0x8
 ```
-ÉèÖÃ²ÎÊýµÄÃüÁî¸ñÊ½Îª£º`info [×ÓÃüÁî] [²ÎÊý]`
+è®¾ç½®å‚æ•°çš„å‘½ä»¤æ ¼å¼ä¸ºï¼š`info [å­å‘½ä»¤] [å‚æ•°]`
 
-×ÓÃüÁîÈçÏÂ±íËùÊ¾£º
+å­å‘½ä»¤å¦‚ä¸‹è¡¨æ‰€ç¤ºï¼š
 
-| ÃüÁîÃû | ÒâÒå                 | È¡Öµ                          |
+| å‘½ä»¤å | æ„ä¹‰                 | å–å€¼                          |
 |:------:|:--------------------:|:-----------------------------:|
-| dev    | ÉèÖÃÉè±¸ÀàÐÍ         | 1:±ê×¼°æ 2:¸ß·Ö±æÂÊ°æ±¾       |
-| lcd    | ÉèÖÃÆÁÄ»ÀàÐÍ         | 0:1602ÆÁ 1:LCD²ÊÆÁ            |
-| probe  | ÉèÖÃÎÂ¶ÈÌ½Í·ÀàÐÍ     | 0:KÐÍÈÈµçÅ¼ 1:PT100 2:5kÅ·NTC |
-| addr   | ÉèÖÃ´®¿ÚµØÖ·         | 1-247                         |
-| alarm  | ÉèÖÃALARM¿ª¹Ø        | 0:¹Ø±Õ 1:¿ªÆô                 |
-| baud   | ÉèÖÃMODBUSÐ­Òé²¨ÌØÂÊ | 115200bps-2400bps             |
+| dev    | è®¾ç½®è®¾å¤‡ç±»åž‹         | 1:æ ‡å‡†ç‰ˆ 2:é«˜åˆ†è¾¨çŽ‡ç‰ˆæœ¬       |
+| lcd    | è®¾ç½®å±å¹•ç±»åž‹         | 0:1602å± 1:LCDå½©å±            |
+| probe  | è®¾ç½®æ¸©åº¦æŽ¢å¤´ç±»åž‹     | 0:Kåž‹çƒ­ç”µå¶ 1:PT100 2:5kæ¬§NTC |
+| addr   | è®¾ç½®ä¸²å£åœ°å€         | 1-247                         |
+| alarm  | è®¾ç½®ALARMå¼€å…³        | 0:å…³é—­ 1:å¼€å¯                 |
+| baud   | è®¾ç½®MODBUSåè®®æ³¢ç‰¹çŽ‡ | 115200bps-2400bps             |
 
 ### info dev
-UIMeterËùÓÐ°æ±¾Ê¹ÓÃÏàÍ¬µÄ¹Ì¼þ£¬ÓÃinfo devÃüÁîÀ´½øÐÐÇø·Ö¡£
-- Ê¹ÓÃ`info dev 2`ÃüÁîÉèÖÃÎª¸ß·Ö±æÂÊ°æ±¾£¬ÅäºÏ1uAµçÁ÷·Ö±æÂÊ¡£
-- ÆäËü°æ±¾Ê¹ÓÃ`info dev 1`ÃüÁîÉèÖÃ£¬ÅäºÏ0.1mAµçÁ÷·Ö±æÂÊ¡£
+UIMeteræ‰€æœ‰ç‰ˆæœ¬ä½¿ç”¨ç›¸åŒçš„å›ºä»¶ï¼Œç”¨info devå‘½ä»¤æ¥è¿›è¡ŒåŒºåˆ†ã€‚
+- ä½¿ç”¨`info dev 2`å‘½ä»¤è®¾ç½®ä¸ºé«˜åˆ†è¾¨çŽ‡ç‰ˆæœ¬ï¼Œé…åˆ1uAç”µæµåˆ†è¾¨çŽ‡ã€‚
+- å…¶å®ƒç‰ˆæœ¬ä½¿ç”¨`info dev 1`å‘½ä»¤è®¾ç½®ï¼Œé…åˆ0.1mAç”µæµåˆ†è¾¨çŽ‡ã€‚
 
-ÉèÖÃÒÔºóÁ¢¼´ÉúÐ§£¬±£´æ²ÎÊýÐèÒªÖ´ÐÐ`param save`ÃüÁî¡£
+è®¾ç½®ä»¥åŽç«‹å³ç”Ÿæ•ˆï¼Œä¿å­˜å‚æ•°éœ€è¦æ‰§è¡Œ`param save`å‘½ä»¤ã€‚
 
 ### info lcd
-UIMeter¼æÈÝ1602ÆÁÄ»ºÍTFT²ÊÆÁ¡£
-- `info lcd 0`ÉèÖÃÎª1602ÆÁÄ»¡£
-- `info lcd 1`ÉèÖÃÎªTFT²ÊÆÁ¡£
+UIMeterå…¼å®¹1602å±å¹•å’ŒTFTå½©å±ã€‚
+- `info lcd 0`è®¾ç½®ä¸º1602å±å¹•ã€‚
+- `info lcd 1`è®¾ç½®ä¸ºTFTå½©å±ã€‚
 
-ÉèÖÃÒÔºóÖ´ÐÐ`param save`ÃüÁî±£´æ²ÎÊý£¬ÖØÆôÉúÐ§¡£
+è®¾ç½®ä»¥åŽæ‰§è¡Œ`param save`å‘½ä»¤ä¿å­˜å‚æ•°ï¼Œé‡å¯ç”Ÿæ•ˆã€‚
 
 ### info probe
-UIMeter¼æÈÝÈýÖÖÎÂ¶ÈÌ½Í·¡£
-- `info probe 0`ÉèÖÃÎªKÐÍÈÈµçÅ¼¡£
-- `info probe 1`ÉèÖÃÎªPT100¡£
-- `info probe 2`ÉèÖÃÎª5kÅ·NTCµç×è¡£
+UIMeterå…¼å®¹ä¸‰ç§æ¸©åº¦æŽ¢å¤´ã€‚
+- `info probe 0`è®¾ç½®ä¸ºKåž‹çƒ­ç”µå¶ã€‚
+- `info probe 1`è®¾ç½®ä¸ºPT100ã€‚
+- `info probe 2`è®¾ç½®ä¸º5kæ¬§NTCç”µé˜»ã€‚
 
-ÉèÖÃÒÔºóÁ¢¼´ÉúÐ§£¬±£´æ²ÎÊýÐèÒªÖ´ÐÐ`param save`ÃüÁî¡£
+è®¾ç½®ä»¥åŽç«‹å³ç”Ÿæ•ˆï¼Œä¿å­˜å‚æ•°éœ€è¦æ‰§è¡Œ`param save`å‘½ä»¤ã€‚
 
 ### info addr
-ÉèÖÃ´®¿ÚµØÖ·£¬µØÖ··¶Î§1-247.
-- `info addr 2`ÉèÖÃ´®¿ÚµØÖ·Îª2£¬¸ÃµØÖ·ÓëMODBUSÐ­ÒéµØÖ·ÏàÍ¬¡£
+è®¾ç½®ä¸²å£åœ°å€ï¼Œåœ°å€èŒƒå›´1-247.
+- `info addr 2`è®¾ç½®ä¸²å£åœ°å€ä¸º2ï¼Œè¯¥åœ°å€ä¸ŽMODBUSåè®®åœ°å€ç›¸åŒã€‚
 
-ÉèÖÃÒÔºóÁ¢¼´ÉúÐ§£¬±£´æ²ÎÊýÐèÒªÖ´ÐÐ`param save`ÃüÁî¡£
+è®¾ç½®ä»¥åŽç«‹å³ç”Ÿæ•ˆï¼Œä¿å­˜å‚æ•°éœ€è¦æ‰§è¡Œ`param save`å‘½ä»¤ã€‚
 
 ### info alarm
-UIMeterµÄALARM¹¦ÄÜ°üÀ¨Ò»¸öÊä³öMOS¹ÜºÍÒ»¸öLEDÖ¸Ê¾µÆ£¬ÉÏµçÄ¬ÈÏÓÉUIMeter¿ØÖÆ¡£
-Èç¹ûÓÃ»§ÐèÒªÊÖ¶¯¿ØÖÆMOS¹ÜºÍLEDÖ¸Ê¾µÆ£¬ÐèÒªÊ×ÏÈ¹Ø±ÕALARM¹¦ÄÜ¡£
-- `info alarm 0`¹Ø±ÕALARM¹¦ÄÜ¡£
-- `info alarm 1`´ò¿ªALARM¹¦ÄÜ¡£
+UIMeterçš„ALARMåŠŸèƒ½åŒ…æ‹¬ä¸€ä¸ªè¾“å‡ºMOSç®¡å’Œä¸€ä¸ªLEDæŒ‡ç¤ºç¯ï¼Œä¸Šç”µé»˜è®¤ç”±UIMeteræŽ§åˆ¶ã€‚
+å¦‚æžœç”¨æˆ·éœ€è¦æ‰‹åŠ¨æŽ§åˆ¶MOSç®¡å’ŒLEDæŒ‡ç¤ºç¯ï¼Œéœ€è¦é¦–å…ˆå…³é—­ALARMåŠŸèƒ½ã€‚
+- `info alarm 0`å…³é—­ALARMåŠŸèƒ½ã€‚
+- `info alarm 1`æ‰“å¼€ALARMåŠŸèƒ½ã€‚
 
-ÉèÖÃÒÔºóÁ¢¼´ÉúÐ§£¬µôµç²»±£´æ¡£
+è®¾ç½®ä»¥åŽç«‹å³ç”Ÿæ•ˆï¼ŒæŽ‰ç”µä¸ä¿å­˜ã€‚
 
 ### info baud
-ÉèÖÃMODBUSÐ­Òé´®¿Ú²¨ÌØÂÊ£¬Ö§³Ö²¨ÌØÂÊ£º115200¡¢57600¡¢38400¡¢19200¡¢9600¡¢4800¡¢2400¡£
-- `info baud 9600`ÉèÖÃ²¨ÌØÂÊÎª9600bps¡£
-ÉèÖÃÒÔºóÖ´ÐÐ`param save`ÃüÁî±£´æ£¬È»ºóÇÐ»»ÎªMODBUSÐ­ÒéÉúÐ§¡£
+è®¾ç½®MODBUSåè®®ä¸²å£æ³¢ç‰¹çŽ‡ï¼Œæ”¯æŒæ³¢ç‰¹çŽ‡ï¼š115200ã€57600ã€38400ã€19200ã€9600ã€4800ã€2400ã€‚
+- `info baud 9600`è®¾ç½®æ³¢ç‰¹çŽ‡ä¸º9600bpsã€‚
+è®¾ç½®ä»¥åŽæ‰§è¡Œ`param save`å‘½ä»¤ä¿å­˜ï¼Œç„¶åŽåˆ‡æ¢ä¸ºMODBUSåè®®ç”Ÿæ•ˆã€‚
 
-**¸ÃÃüÁî½ö½ö¶ÔMODBUSÐ­ÒéÉúÐ§¡£TERMÐ­ÒéÈÔÈ»Ê¹ÓÃ115200¹Ì¶¨²¨ÌØÂÊ**¡£
+**è¯¥å‘½ä»¤ä»…ä»…å¯¹MODBUSåè®®ç”Ÿæ•ˆã€‚TERMåè®®ä»ç„¶ä½¿ç”¨115200å›ºå®šæ³¢ç‰¹çŽ‡**ã€‚
 
 ## param
-²Ù×÷ÓÃ»§²ÎÊý¡£
+æ“ä½œç”¨æˆ·å‚æ•°ã€‚
 
-ÃüÁî¸ñÊ½£º`param [load|save|restore] Operate parameters.`
+å‘½ä»¤æ ¼å¼ï¼š`param [load|save|restore] Operate parameters.`
 
-paramÃüÁî´øÈý¸ö×ÓÃüÁî£ºload¡¢save¡¢restore¡£
-- `param load`ÃüÁî´ÓÄÚÖÃEEPROM¼ÓÔØ±£´æµÄ²ÎÊý¡£
-- `param save`ÃüÁî½«²ÎÊý±£´æµ½ÄÚÖÃEEPROM¡£
-- `param restore`ÃüÁî»Ö¸´Ä¬ÈÏ²ÎÊý¡£Í¬Ê±°´×¡×óÓÒ¼üÉÏµçÒ²¿ÉÒÔ»Ö¸´Ä¬ÈÏ²ÎÊý¡£
+paramå‘½ä»¤å¸¦ä¸‰ä¸ªå­å‘½ä»¤ï¼šloadã€saveã€restoreã€‚
+- `param load`å‘½ä»¤ä»Žå†…ç½®EEPROMåŠ è½½ä¿å­˜çš„å‚æ•°ã€‚
+- `param save`å‘½ä»¤å°†å‚æ•°ä¿å­˜åˆ°å†…ç½®EEPROMã€‚
+- `param restore`å‘½ä»¤æ¢å¤é»˜è®¤å‚æ•°ã€‚åŒæ—¶æŒ‰ä½å·¦å³é”®ä¸Šç”µä¹Ÿå¯ä»¥æ¢å¤é»˜è®¤å‚æ•°ã€‚
 
 ## uset
-µçÑ¹Í¨µÀ²ÎÊýÉèÖÃ¡£
+ç”µåŽ‹é€šé“å‚æ•°è®¾ç½®ã€‚
 
-ÃüÁî¸ñÊ½£º`uset [adj|zero|max|min|cali] [adj 100000x|U 10000x] set U param.`
+å‘½ä»¤æ ¼å¼ï¼š`uset [adj|zero|max|min|cali] [adj 100000x|U 10000x] set U param.`
 
-²»´ø²ÎÊýµÄusetÃüÁîÊä³öµ±Ç°µçÑ¹Í¨µÀºÍµçÁ÷Í¨µÀµÄËùÓÐ²ÎÊý¡£
+ä¸å¸¦å‚æ•°çš„usetå‘½ä»¤è¾“å‡ºå½“å‰ç”µåŽ‹é€šé“å’Œç”µæµé€šé“çš„æ‰€æœ‰å‚æ•°ã€‚
 ```
 uset
 uset [adj|zero|max|min|cali] [adj 100000x|U 10000x] set U param.
@@ -282,13 +282,13 @@ uset [adj|zero|max|min|cali] [adj 100000x|U 10000x] set U param.
 ```
 
 ### uset adj
-ÉèÖÃµçÑ¹ÔöÒæÐ£ÕýÏµÊý¡£
+è®¾ç½®ç”µåŽ‹å¢žç›Šæ ¡æ­£ç³»æ•°ã€‚
 
-µçÑ¹ÔöÒæÐ£ÕýÏµÊýÊÇÒ»¸ö1¸½½üµÄÊýÖµ£¬ÓÃÀ´Ð£Õý·ÖÑ¹µç×è¡¢»ù×¼³õÊ¼ÖµµÈ´øÀ´µÄÎó²î¡£
-·¶Î§0-100£¬Èç¹ûUIMeterÏÔÊ¾µçÑ¹ÊýÖµÐ¡ÓÚÊµ¼ÊµçÑ¹Öµ£¬ÐèÒªÔö´óµçÑ¹ÔöÒæÐ£ÕýÏµÊý£¬
-·´Ö®¼õÐ¡µçÑ¹ÔöÒæÐ£ÕýÏµÊý¡£
+ç”µåŽ‹å¢žç›Šæ ¡æ­£ç³»æ•°æ˜¯ä¸€ä¸ª1é™„è¿‘çš„æ•°å€¼ï¼Œç”¨æ¥æ ¡æ­£åˆ†åŽ‹ç”µé˜»ã€åŸºå‡†åˆå§‹å€¼ç­‰å¸¦æ¥çš„è¯¯å·®ã€‚
+èŒƒå›´0-100ï¼Œå¦‚æžœUIMeteræ˜¾ç¤ºç”µåŽ‹æ•°å€¼å°äºŽå®žé™…ç”µåŽ‹å€¼ï¼Œéœ€è¦å¢žå¤§ç”µåŽ‹å¢žç›Šæ ¡æ­£ç³»æ•°ï¼Œ
+åä¹‹å‡å°ç”µåŽ‹å¢žç›Šæ ¡æ­£ç³»æ•°ã€‚
 
-Ê¹ÓÃuset adjÃüÁî½«µçÑ¹ÔöÒæÐ£ÕýÏµÊýÉèÖÃÎª1.00234£¬ÈçÏÂËùÊ¾£¬Éè¶¨ÊýÖµÐèÒªÀ©´ó100000±¶È¥µôÐ¡Êýµã¡£
+ä½¿ç”¨uset adjå‘½ä»¤å°†ç”µåŽ‹å¢žç›Šæ ¡æ­£ç³»æ•°è®¾ç½®ä¸º1.00234ï¼Œå¦‚ä¸‹æ‰€ç¤ºï¼Œè®¾å®šæ•°å€¼éœ€è¦æ‰©å¤§100000å€åŽ»æŽ‰å°æ•°ç‚¹ã€‚
 ```
 uset adj 100234
 uset
@@ -301,21 +301,21 @@ uset [adj|zero|max|min|cali] [adj 100000x|U 10000x] set U param.
 ```
  
 ### uset zero
-ÉèÖÃµçÑ¹ÁãÆ«Ð£ÕýÏµÊý¡£
+è®¾ç½®ç”µåŽ‹é›¶åæ ¡æ­£ç³»æ•°ã€‚
 
-Èç¹ûµçÑ¹Í¨µÀÔÚ¶Ì½Ó²âÁ¿¶ËÊ±²»Îª0£¬ÐèÒªÐ£ÕýµçÑ¹ÁãÆ«¡£µ¥Î»ÎªÒ»¸öµçÑ¹·Ö±æÂÊ¡£
+å¦‚æžœç”µåŽ‹é€šé“åœ¨çŸ­æŽ¥æµ‹é‡ç«¯æ—¶ä¸ä¸º0ï¼Œéœ€è¦æ ¡æ­£ç”µåŽ‹é›¶åã€‚å•ä½ä¸ºä¸€ä¸ªç”µåŽ‹åˆ†è¾¨çŽ‡ã€‚
 
-Èç¹ûµçÑ¹ÏÔÊ¾0.0003V£¬Ê¹ÓÃ`uset zero 3`ÃüÁîÐ£Õý¡£
+å¦‚æžœç”µåŽ‹æ˜¾ç¤º0.0003Vï¼Œä½¿ç”¨`uset zero 3`å‘½ä»¤æ ¡æ­£ã€‚
 
-Èç¹ûµçÑ¹ÏÔÊ¾-0.0002V£¬Ê¹ÓÃ`uset zero -2`ÃüÁîÐ£Õý¡£
+å¦‚æžœç”µåŽ‹æ˜¾ç¤º-0.0002Vï¼Œä½¿ç”¨`uset zero -2`å‘½ä»¤æ ¡æ­£ã€‚
 
 ### uset [max|min]
-ÉèÖÃµçÑ¹ÉÏÏÞ¡¢µçÑ¹ÏÂÏÞ¡£
+è®¾ç½®ç”µåŽ‹ä¸Šé™ã€ç”µåŽ‹ä¸‹é™ã€‚
 
-UIMeterÊ¹ÓÃµçÑ¹ÉÏÏÞ¡¢µçÑ¹ÏÂÏÞ¿ØÖÆÊä³öMOS¹ÜºÍLED¡£²âÁ¿µçÑ¹¸ßÓÚÏÂÏÞ²¢ÇÒµÍÓÚÏÂÏÞ
-Ê±´ò¿ªÊä³öMOS¹ÜÏ¨ÃðLED£»²âÁ¿µçÑ¹¸ßÓÚÉÏÏÞ»òÕßµÍÓÚÏÂÏÞ¹Ø±ÕÊä³öMOS¹ÜµãÁÁLED¡£
+UIMeterä½¿ç”¨ç”µåŽ‹ä¸Šé™ã€ç”µåŽ‹ä¸‹é™æŽ§åˆ¶è¾“å‡ºMOSç®¡å’ŒLEDã€‚æµ‹é‡ç”µåŽ‹é«˜äºŽä¸‹é™å¹¶ä¸”ä½ŽäºŽä¸‹é™
+æ—¶æ‰“å¼€è¾“å‡ºMOSç®¡ç†„ç­LEDï¼›æµ‹é‡ç”µåŽ‹é«˜äºŽä¸Šé™æˆ–è€…ä½ŽäºŽä¸‹é™å…³é—­è¾“å‡ºMOSç®¡ç‚¹äº®LEDã€‚
 
-ÉèÖÃ·½·¨¾ÙÀýÈçÏÂ£º
+è®¾ç½®æ–¹æ³•ä¸¾ä¾‹å¦‚ä¸‹ï¼š
 ```
 uset max 100000
 uset min 20000
@@ -327,23 +327,23 @@ uset [adj|zero|max|min|cali] [adj 100000x|U 10000x] set U param.
  U Hys:  0.5000V   ChkNum:       4
  75mV SHUNT Range:     0A Gain:  1.00000
 ```
-µçÑ¹ÊýÖµÐèÒªÀ©´ó10000±¶È¥µôÐ¡Êý¡£
+ç”µåŽ‹æ•°å€¼éœ€è¦æ‰©å¤§10000å€åŽ»æŽ‰å°æ•°ã€‚
 
 ### uset cali
-µçÑ¹¿ìËÙÐ£×¼¡£
+ç”µåŽ‹å¿«é€Ÿæ ¡å‡†ã€‚
 
-Ê×ÏÈÊ¹ÓÃ`uset adj 100000`ÃüÁî½«µçÑ¹ÔöÒæÏµÊýÉèÖÃÎª1.
-½«UIMeterµçÑ¹Í¨µÀÓë»ù×¼µçÑ¹Ô´²¢Áª£¬¶ÁÈ¡»ù×¼Ô´µçÑ¹Öµ£¬Ö´ÐÐÃüÁî `uset cali [»ù×¼µçÑ¹Öµ]` 
-UIMeter×Ô¶¯¼ÆËãÐ£×¼ÏµÊý£¬±£Ö¤µçÑ¹ÏÔÊ¾ÖµÓë»ù×¼µçÑ¹ÖµÏàµÈ£¬»ù×¼µçÑ¹ÖµÐèÒªÀ©´ó10000±¶È¥µôÐ¡Êý¡£
+é¦–å…ˆä½¿ç”¨`uset adj 100000`å‘½ä»¤å°†ç”µåŽ‹å¢žç›Šç³»æ•°è®¾ç½®ä¸º1.
+å°†UIMeterç”µåŽ‹é€šé“ä¸ŽåŸºå‡†ç”µåŽ‹æºå¹¶è”ï¼Œè¯»å–åŸºå‡†æºç”µåŽ‹å€¼ï¼Œæ‰§è¡Œå‘½ä»¤ `uset cali [åŸºå‡†ç”µåŽ‹å€¼]` 
+UIMeterè‡ªåŠ¨è®¡ç®—æ ¡å‡†ç³»æ•°ï¼Œä¿è¯ç”µåŽ‹æ˜¾ç¤ºå€¼ä¸ŽåŸºå‡†ç”µåŽ‹å€¼ç›¸ç­‰ï¼ŒåŸºå‡†ç”µåŽ‹å€¼éœ€è¦æ‰©å¤§10000å€åŽ»æŽ‰å°æ•°ã€‚
 
-ÉèÖÃÒÔºóÁ¢¼´ÉúÐ§£¬±£´æ²ÎÊýÐèÒªÖ´ÐÐ`param save`ÃüÁî¡£
+è®¾ç½®ä»¥åŽç«‹å³ç”Ÿæ•ˆï¼Œä¿å­˜å‚æ•°éœ€è¦æ‰§è¡Œ`param save`å‘½ä»¤ã€‚
 
 ## iset
-µçÁ÷Í¨µÀ²ÎÊýÉèÖÃ¡£
+ç”µæµé€šé“å‚æ•°è®¾ç½®ã€‚
 
-ÃüÁî¸ñÊ½£º`iset [adj|zero|cali] [adj 100000x|I 10000x] set I param.`
+å‘½ä»¤æ ¼å¼ï¼š`iset [adj|zero|cali] [adj 100000x|I 10000x] set I param.`
 
-²»´ø²ÎÊýµÄisetÃüÁîÊä³öµ±Ç°µçÑ¹Í¨µÀºÍµçÁ÷Í¨µÀµÄËùÓÐ²ÎÊý¡£
+ä¸å¸¦å‚æ•°çš„isetå‘½ä»¤è¾“å‡ºå½“å‰ç”µåŽ‹é€šé“å’Œç”µæµé€šé“çš„æ‰€æœ‰å‚æ•°ã€‚
 ```
 iset
 iset [adj|zero|cali|shunt|gain] [adj 100000x|I 10000x] set I param.
@@ -355,13 +355,13 @@ iset [adj|zero|cali|shunt|gain] [adj 100000x|I 10000x] set I param.
 ```
 
 ### iset adj
-ÉèÖÃµçÁ÷ÔöÒæÐ£ÕýÏµÊý¡£
+è®¾ç½®ç”µæµå¢žç›Šæ ¡æ­£ç³»æ•°ã€‚
 
-µçÁ÷ÔöÒæÐ£ÕýÏµÊýÊÇÒ»¸ö1¸½½üµÄÊýÖµ£¬ÓÃÀ´Ð£Õý¼ìÁ÷µç×è¡¢»ù×¼³õÊ¼ÖµµÈ´øÀ´µÄÎó²î£¬
-·¶Î§0-100£¬Èç¹ûUIMeterÏÔÊ¾µçÁ÷ÊýÖµÐ¡ÓÚÊµ¼ÊµçÁ÷Öµ£¬ÐèÒªÔö´óµçÁ÷ÔöÒæÐ£ÕýÏµÊý£¬
-·´Ö®¼õÐ¡µçÁ÷ÔöÒæÐ£ÕýÏµÊý¡£
+ç”µæµå¢žç›Šæ ¡æ­£ç³»æ•°æ˜¯ä¸€ä¸ª1é™„è¿‘çš„æ•°å€¼ï¼Œç”¨æ¥æ ¡æ­£æ£€æµç”µé˜»ã€åŸºå‡†åˆå§‹å€¼ç­‰å¸¦æ¥çš„è¯¯å·®ï¼Œ
+èŒƒå›´0-100ï¼Œå¦‚æžœUIMeteræ˜¾ç¤ºç”µæµæ•°å€¼å°äºŽå®žé™…ç”µæµå€¼ï¼Œéœ€è¦å¢žå¤§ç”µæµå¢žç›Šæ ¡æ­£ç³»æ•°ï¼Œ
+åä¹‹å‡å°ç”µæµå¢žç›Šæ ¡æ­£ç³»æ•°ã€‚
 
-Ê¹ÓÃiset adjÃüÁî½«µçÁ÷ÔöÒæÐ£ÕýÏµÊýÉèÖÃÎª1.00234£¬Éè¶¨ÊýÖµÐèÒªÀ©´ó100000±¶È¥µôÐ¡Êýµã¡£
+ä½¿ç”¨iset adjå‘½ä»¤å°†ç”µæµå¢žç›Šæ ¡æ­£ç³»æ•°è®¾ç½®ä¸º1.00234ï¼Œè®¾å®šæ•°å€¼éœ€è¦æ‰©å¤§100000å€åŽ»æŽ‰å°æ•°ç‚¹ã€‚
 ```
 iset adj 100234
 iset
@@ -374,40 +374,40 @@ iset [adj|zero|cali|shunt|gain] [adj 100000x|I 10000x] set I param.
 ```
 
 ### iset zero
-ÉèÖÃµçÁ÷ÁãÆ«Ð£ÕýÏµÊý¡£
+è®¾ç½®ç”µæµé›¶åæ ¡æ­£ç³»æ•°ã€‚
 
-Èç¹ûµçÁ÷Í¨µÀÔÚ²âÁ¿¶ËÐü¿ÕÊ±²»Îª0£¬ÐèÒªÐ£ÕýµçÁ÷ÁãÆ«¡£µ¥Î»ÎªÒ»¸öµçÁ÷·Ö±æÂÊ¡£
+å¦‚æžœç”µæµé€šé“åœ¨æµ‹é‡ç«¯æ‚¬ç©ºæ—¶ä¸ä¸º0ï¼Œéœ€è¦æ ¡æ­£ç”µæµé›¶åã€‚å•ä½ä¸ºä¸€ä¸ªç”µæµåˆ†è¾¨çŽ‡ã€‚
 
-Èç¹ûµçÁ÷ÏÔÊ¾0.0003A£¬Ê¹ÓÃ`iset zero 3`ÃüÁîÐ£Õý¡£
+å¦‚æžœç”µæµæ˜¾ç¤º0.0003Aï¼Œä½¿ç”¨`iset zero 3`å‘½ä»¤æ ¡æ­£ã€‚
 
-Èç¹ûµçÁ÷ÏÔÊ¾-0.0002A£¬Ê¹ÓÃ`iset zero -2`ÃüÁîÐ£Õý¡£
+å¦‚æžœç”µæµæ˜¾ç¤º-0.0002Aï¼Œä½¿ç”¨`iset zero -2`å‘½ä»¤æ ¡æ­£ã€‚
 
 ### iset cali
-µçÁ÷¿ìËÙÐ£×¼¡£
+ç”µæµå¿«é€Ÿæ ¡å‡†ã€‚
 
-Ê×ÏÈÊ¹ÓÃ`iset adj 100000`ÃüÁî½«µçÁ÷ÔöÒæÐ£ÕýÏµÊýÉèÖÃÎª1.
-½«UIMeterµçÁ÷Í¨µÀÓë»ù×¼µçÁ÷Ô´´®Áª£¬¶ÁÈ¡»ù×¼Ô´µçÁ÷Öµ£¬Ö´ÐÐÃüÁî `iset cali [»ù×¼µçÁ÷Öµ]`
-UIMeter×Ô¶¯¼ÆËãÐ£×¼ÏµÊý£¬±£Ö¤µçÁ÷ÏÔÊ¾ÖµÓë»ù×¼µçÁ÷ÖµÏàµÈ£¬»ù×¼µçÁ÷ÖµÐèÒªÀ©´ó10000±¶È¥µôÐ¡Êý¡£
+é¦–å…ˆä½¿ç”¨`iset adj 100000`å‘½ä»¤å°†ç”µæµå¢žç›Šæ ¡æ­£ç³»æ•°è®¾ç½®ä¸º1.
+å°†UIMeterç”µæµé€šé“ä¸ŽåŸºå‡†ç”µæµæºä¸²è”ï¼Œè¯»å–åŸºå‡†æºç”µæµå€¼ï¼Œæ‰§è¡Œå‘½ä»¤ `iset cali [åŸºå‡†ç”µæµå€¼]`
+UIMeterè‡ªåŠ¨è®¡ç®—æ ¡å‡†ç³»æ•°ï¼Œä¿è¯ç”µæµæ˜¾ç¤ºå€¼ä¸ŽåŸºå‡†ç”µæµå€¼ç›¸ç­‰ï¼ŒåŸºå‡†ç”µæµå€¼éœ€è¦æ‰©å¤§10000å€åŽ»æŽ‰å°æ•°ã€‚
 
-ÉèÖÃÒÔºóÁ¢¼´ÉúÐ§£¬±£´æ²ÎÊýÐèÒªÖ´ÐÐ`param save`ÃüÁî¡£
+è®¾ç½®ä»¥åŽç«‹å³ç”Ÿæ•ˆï¼Œä¿å­˜å‚æ•°éœ€è¦æ‰§è¡Œ`param save`å‘½ä»¤ã€‚
 
 ### iset [shunt|gain]
-ÉèÖÃ·ÖÁ÷Æ÷Á¿³ÌºÍÔöÒæÐ£ÕýÏµÊý¡£¸ÃÃüÁî´Óv17.5.11¹Ì¼þ¿ªÊ¼Ö§³Ö¡£
+è®¾ç½®åˆ†æµå™¨é‡ç¨‹å’Œå¢žç›Šæ ¡æ­£ç³»æ•°ã€‚è¯¥å‘½ä»¤ä»Žv17.5.11å›ºä»¶å¼€å§‹æ”¯æŒã€‚
 
-UIMeter´Óv17.5.11¹Ì¼þ¿ªÊ¼Ö§³ÖÊ¹ÓÃµçÑ¹µµ²âÁ¿·ÖÁ÷Æ÷¡£¶Ì½ÓJ4ÌøÏßÓÒ²àÁ½Î»£¬
-È»ºóÉèÖÃ·ÖÁ÷Æ÷Á¿³ÌÒÔºó¼´¿ÉÊ¹ÓÃµçÑ¹µµ²âÊÔ·ÖÁ÷Æ÷µçÁ÷¡£
+UIMeterä»Žv17.5.11å›ºä»¶å¼€å§‹æ”¯æŒä½¿ç”¨ç”µåŽ‹æ¡£æµ‹é‡åˆ†æµå™¨ã€‚çŸ­æŽ¥J4è·³çº¿å³ä¾§ä¸¤ä½ï¼Œ
+ç„¶åŽè®¾ç½®åˆ†æµå™¨é‡ç¨‹ä»¥åŽå³å¯ä½¿ç”¨ç”µåŽ‹æ¡£æµ‹è¯•åˆ†æµå™¨ç”µæµã€‚
 
-Ò»°ã·ÖÁ÷Æ÷Êä³öÂúÁ¿³ÌµçÑ¹¾ùÎª75mV¡£75mVµçÑ¹³ýÒÔÁ¿³Ì¼´Îª·ÖÁ÷Æ÷µç×è¡£
-Èç75mV 150A·ÖÁ÷Æ÷£¬µç×èÎª`75mV/150A=0.5mR`¡£
+ä¸€èˆ¬åˆ†æµå™¨è¾“å‡ºæ»¡é‡ç¨‹ç”µåŽ‹å‡ä¸º75mVã€‚75mVç”µåŽ‹é™¤ä»¥é‡ç¨‹å³ä¸ºåˆ†æµå™¨ç”µé˜»ã€‚
+å¦‚75mV 150Aåˆ†æµå™¨ï¼Œç”µé˜»ä¸º`75mV/150A=0.5mR`ã€‚
 
-UIMeter²ÉÑù·ÖÁ÷Æ÷Î¢Ð¡µç×èÉÏµÄÑ¹½µ£¬È»ºó¸ù¾ÝÓÃ»§ÉèÖÃµÄ·ÖÁ÷Æ÷Á¿³Ì
-¼ÆËã³öÁ÷¹ý·ÖÁ÷Æ÷ÉÏµÄµçÁ÷¡£
+UIMeteré‡‡æ ·åˆ†æµå™¨å¾®å°ç”µé˜»ä¸Šçš„åŽ‹é™ï¼Œç„¶åŽæ ¹æ®ç”¨æˆ·è®¾ç½®çš„åˆ†æµå™¨é‡ç¨‹
+è®¡ç®—å‡ºæµè¿‡åˆ†æµå™¨ä¸Šçš„ç”µæµã€‚
 
-ÃüÁî¸ñÊ½£º`iset shunt [·ÖÁ÷Æ÷Á¿³Ì]`
+å‘½ä»¤æ ¼å¼ï¼š`iset shunt [åˆ†æµå™¨é‡ç¨‹]`
 
-ÃüÁî¸ñÊ½£º`iset gain [À©´ó100000±¶ºóµÄÔöÒæÐ£ÕýÏµÊý]`
+å‘½ä»¤æ ¼å¼ï¼š`iset gain [æ‰©å¤§100000å€åŽçš„å¢žç›Šæ ¡æ­£ç³»æ•°]`
 
-·ÖÁ÷Æ÷Á¿³ÌÉèÖÃÎª100AÐ£ÕýÏµÊýÉèÖÃÎª1.00111£¬ÃüÁîÈçÏÂ£º
+åˆ†æµå™¨é‡ç¨‹è®¾ç½®ä¸º100Aæ ¡æ­£ç³»æ•°è®¾ç½®ä¸º1.00111ï¼Œå‘½ä»¤å¦‚ä¸‹ï¼š
 ```
 iset shunt 100
 iset gain 100111
@@ -419,7 +419,7 @@ iset [adj|zero|cali|shunt|gain] [adj 100000x|I 10000x] set I param.
  U Hys:  0.5000V   ChkNum:       4
  75mV SHUNT Range:   100A Gain:  1.00111
 ```
-·ÖÁ÷Æ÷Á¿³ÌÉèÖÃÎª0AÐ£ÕýÏµÊýÉèÖÃÎª1£¬ÃüÁîÈçÏÂ£º
+åˆ†æµå™¨é‡ç¨‹è®¾ç½®ä¸º0Aæ ¡æ­£ç³»æ•°è®¾ç½®ä¸º1ï¼Œå‘½ä»¤å¦‚ä¸‹ï¼š
 ```
 iset shunt 0
 iset gain 100000
@@ -431,28 +431,28 @@ iset [adj|zero|cali|shunt|gain] [adj 100000x|I 10000x] set I param.
  U Hys:  0.5000V   ChkNum:       4
  75mV SHUNT Range:     0A Gain:  1.00000
 ```
-·ÖÁ÷Æ÷Á¿³ÌÉèÖÃ·¶Î§1A-65534A£¬¿É¼æÈÝÊÐÃæÉÏ¾ø´ó¶àÊý·ÖÁ÷Æ÷¡£
+åˆ†æµå™¨é‡ç¨‹è®¾ç½®èŒƒå›´1A-65534Aï¼Œå¯å…¼å®¹å¸‚é¢ä¸Šç»å¤§å¤šæ•°åˆ†æµå™¨ã€‚
 
-·ÖÁ÷Æ÷Á¿³ÌÉèÖÃÎª0A»òÕß65535AÊ±£¬¹Ø±Õ·ÖÁ÷Æ÷µçÁ÷²âÁ¿¹¦ÄÜ¡£
+åˆ†æµå™¨é‡ç¨‹è®¾ç½®ä¸º0Aæˆ–è€…65535Aæ—¶ï¼Œå…³é—­åˆ†æµå™¨ç”µæµæµ‹é‡åŠŸèƒ½ã€‚
   
-Ò»°ãÓÃ»§ÉèÖÃ·ÖÁ÷Æ÷Á¿³ÌÒÔºó¼´¿É×¼È·²âÁ¿´óµçÁ÷£¬Èç¹ûÓÃ»§¾ß±¸´óµçÁ÷Ð£×¼Ìõ¼þ£¬
-¿ÉÒÔÊ¹ÓÃiset gainÃüÁî½øÒ»²½Ìá¸ß²âÁ¿¾«¶È¡£
+ä¸€èˆ¬ç”¨æˆ·è®¾ç½®åˆ†æµå™¨é‡ç¨‹ä»¥åŽå³å¯å‡†ç¡®æµ‹é‡å¤§ç”µæµï¼Œå¦‚æžœç”¨æˆ·å…·å¤‡å¤§ç”µæµæ ¡å‡†æ¡ä»¶ï¼Œ
+å¯ä»¥ä½¿ç”¨iset gainå‘½ä»¤è¿›ä¸€æ­¥æé«˜æµ‹é‡ç²¾åº¦ã€‚
 
-ÉèÖÃÒÔºóÁ¢¼´ÉúÐ§£¬±£´æ²ÎÊýÐèÒªÖ´ÐÐ`param save`ÃüÁî¡£
+è®¾ç½®ä»¥åŽç«‹å³ç”Ÿæ•ˆï¼Œä¿å­˜å‚æ•°éœ€è¦æ‰§è¡Œ`param save`å‘½ä»¤ã€‚
 
 ## ctrl
-Éè±¸¿ØÖÆÃüÁî¡£
+è®¾å¤‡æŽ§åˆ¶å‘½ä»¤ã€‚
 
-ÃüÁî¸ñÊ½£º`ctrl [echo|bklt|led|mos|time] [param] Device Control.`
+å‘½ä»¤æ ¼å¼ï¼š`ctrl [echo|bklt|led|mos|time] [param] Device Control.`
 
-Í¨¹ýÉè±¸¿ØÖÆÃüÁî¿ÉÒÔ¿ØÖÆÉè±¸µÄÔËÐÐ²ÎÊý¡£
+é€šè¿‡è®¾å¤‡æŽ§åˆ¶å‘½ä»¤å¯ä»¥æŽ§åˆ¶è®¾å¤‡çš„è¿è¡Œå‚æ•°ã€‚
 
 ### ctrl echo
-¿ª¹ØÃüÁîÐÐ»ØÏÔ¡£
-- ¹Ø±ÕÃüÁîÐÐ»ØÏÔ£º`ctrl echo 0`¡£
-- ´ò¿ªÃüÁîÐÐ»ØÏÔ£º`ctrl echo 1`¡£
+å¼€å…³å‘½ä»¤è¡Œå›žæ˜¾ã€‚
+- å…³é—­å‘½ä»¤è¡Œå›žæ˜¾ï¼š`ctrl echo 0`ã€‚
+- æ‰“å¼€å‘½ä»¤è¡Œå›žæ˜¾ï¼š`ctrl echo 1`ã€‚
 
-UIMeterÄ¬ÈÏ»ØÏÔÓÃ»§ÊäÈëµÄ×Ö·û£¬¿ÉÒÔ¹Ø±ÕÃüÁîÐÐ»ØÏÔ¡£
+UIMeteré»˜è®¤å›žæ˜¾ç”¨æˆ·è¾“å…¥çš„å­—ç¬¦ï¼Œå¯ä»¥å…³é—­å‘½ä»¤è¡Œå›žæ˜¾ã€‚
 ```
 version
  UIMeter v17.12.6 SN:FF56066E7875524828586719
@@ -466,28 +466,28 @@ version
  UIMeter v17.12.6 SN:FF56066E7875524828586719
  ECHO Studio <echo.xjtu@gmail.com>. All Rights Reserved.
 ```
- ÉèÖÃÒÔºóÁ¢¼´ÉúÐ§£¬±£´æ²ÎÊýÐèÒªÖ´ÐÐ`param save`ÃüÁî¡£
+ è®¾ç½®ä»¥åŽç«‹å³ç”Ÿæ•ˆï¼Œä¿å­˜å‚æ•°éœ€è¦æ‰§è¡Œ`param save`å‘½ä»¤ã€‚
 
 ### ctrl bklt
-ÉèÖÃ±³¹âÁÁ¶È¡£
+è®¾ç½®èƒŒå…‰äº®åº¦ã€‚
 
-ÃüÁî¸ñÊ½£º`ctrl bklt [00-FF]`
+å‘½ä»¤æ ¼å¼ï¼š`ctrl bklt [00-FF]`
 
-²ÎÊýÎªÊ®Áù½øÖÆ£¬0x00µ½0xFF£¬0x00×îÁÁ£¬0xFF×î°µ¹Ø±Õ±³¹â¡£
-¿ÉÒÔÍ¨¹ýinfoÃüÁî²é¿´µ±Ç°±³¹âÁÁ¶È¡£ÃüÁî¾ÙÀýÈçÏÂ£º
-- ÉèÖÃ±³¹â×îÁÁ£º`ctrl bklt 00`
-- ÍêÈ«¹Ø±Õ±³¹â£º`ctrl bklt FF`
-- ÉèÖÃ±³¹âÒ»°ëÁÁ¶È£º`ctrl bklt 80`
+å‚æ•°ä¸ºåå…­è¿›åˆ¶ï¼Œ0x00åˆ°0xFFï¼Œ0x00æœ€äº®ï¼Œ0xFFæœ€æš—å…³é—­èƒŒå…‰ã€‚
+å¯ä»¥é€šè¿‡infoå‘½ä»¤æŸ¥çœ‹å½“å‰èƒŒå…‰äº®åº¦ã€‚å‘½ä»¤ä¸¾ä¾‹å¦‚ä¸‹ï¼š
+- è®¾ç½®èƒŒå…‰æœ€äº®ï¼š`ctrl bklt 00`
+- å®Œå…¨å…³é—­èƒŒå…‰ï¼š`ctrl bklt FF`
+- è®¾ç½®èƒŒå…‰ä¸€åŠäº®åº¦ï¼š`ctrl bklt 80`
 
-ÉèÖÃÒÔºóÁ¢¼´ÉúÐ§£¬±£´æ²ÎÊýÐèÒªÖ´ÐÐ`param save`ÃüÁî¡£
+è®¾ç½®ä»¥åŽç«‹å³ç”Ÿæ•ˆï¼Œä¿å­˜å‚æ•°éœ€è¦æ‰§è¡Œ`param save`å‘½ä»¤ã€‚
 
 ### ctrl led
-¿ª¹ØÖ¸Ê¾LED¡£
-- ¹Ø±ÕÖ¸Ê¾LED£º`ctrl led 0`¡£
-- ´ò¿ªÖ¸Ê¾LED£º`ctrl led 1`¡£
+å¼€å…³æŒ‡ç¤ºLEDã€‚
+- å…³é—­æŒ‡ç¤ºLEDï¼š`ctrl led 0`ã€‚
+- æ‰“å¼€æŒ‡ç¤ºLEDï¼š`ctrl led 1`ã€‚
 
-UIMeterÖ¸Ê¾LEDÄ¬ÈÏÓÉÈí¼þ×Ô¶¯¿ØÖÆ£¬ÓÃ»§Ò²¿ÉÒÔÊÖ¶¯¿ØÖÆ¡£
-ÓÃ»§Ê¹ÓÃ`info alarm 0`ÃüÁî¹Ø±ÕÈí¼þ¿ØÖÆLED£¬¿ÉÒÔÊ¹ÓÃ`ctrl led`ÃüÁî¿ØÖÆLED¡£
+UIMeteræŒ‡ç¤ºLEDé»˜è®¤ç”±è½¯ä»¶è‡ªåŠ¨æŽ§åˆ¶ï¼Œç”¨æˆ·ä¹Ÿå¯ä»¥æ‰‹åŠ¨æŽ§åˆ¶ã€‚
+ç”¨æˆ·ä½¿ç”¨`info alarm 0`å‘½ä»¤å…³é—­è½¯ä»¶æŽ§åˆ¶LEDï¼Œå¯ä»¥ä½¿ç”¨`ctrl led`å‘½ä»¤æŽ§åˆ¶LEDã€‚
 ```
 ctrl led 0
  set ALARM to 0 first, aborting...
@@ -498,12 +498,12 @@ ctrl led 1
 ```
 
 ### ctrl mos
-¿ª¹ØÊä³öMOS¹Ü¡£
-- ¹Ø±ÕÊä³öMOS¹Ü£º`ctrl mos 0`¡£
-- ´ò¿ªÊä³öMOS¹Ü£º`ctrl mos 1`¡£
+å¼€å…³è¾“å‡ºMOSç®¡ã€‚
+- å…³é—­è¾“å‡ºMOSç®¡ï¼š`ctrl mos 0`ã€‚
+- æ‰“å¼€è¾“å‡ºMOSç®¡ï¼š`ctrl mos 1`ã€‚
 
-UIMeterÊä³öMOS¹ÜÄ¬ÈÏÓÉÈí¼þ×Ô¶¯¿ØÖÆ£¬ÓÃ»§Ò²¿ÉÒÔÊÖ¶¯¿ØÖÆ¡£ÓÃ»§Ê¹ÓÃ`info alarm 0`
-ÃüÁî¹Ø±ÕÈí¼þ¿ØÖÆÊä³öMOS¹Ü£¬¿ÉÒÔÊ¹ÓÃ`ctrl mos`ÃüÁî¿ØÖÆÊä³öMOS¹Ü¡£
+UIMeterè¾“å‡ºMOSç®¡é»˜è®¤ç”±è½¯ä»¶è‡ªåŠ¨æŽ§åˆ¶ï¼Œç”¨æˆ·ä¹Ÿå¯ä»¥æ‰‹åŠ¨æŽ§åˆ¶ã€‚ç”¨æˆ·ä½¿ç”¨`info alarm 0`
+å‘½ä»¤å…³é—­è½¯ä»¶æŽ§åˆ¶è¾“å‡ºMOSç®¡ï¼Œå¯ä»¥ä½¿ç”¨`ctrl mos`å‘½ä»¤æŽ§åˆ¶è¾“å‡ºMOSç®¡ã€‚
 ```
 ctrl mos 0
  set ALARM=0 first, aborting...
@@ -514,73 +514,73 @@ ctrl mos 1
 ```
 
 ### ctrl time
-ÉèÖÃÉè±¸ÔËÐÐÊ±¼ä¡£
+è®¾ç½®è®¾å¤‡è¿è¡Œæ—¶é—´ã€‚
 
-ÃüÁî¸ñÊ½£º`ctrl time [Éè±¸ÔËÐÐÃëÊý]`
+å‘½ä»¤æ ¼å¼ï¼š`ctrl time [è®¾å¤‡è¿è¡Œç§’æ•°]`
 
-ÃüÁî¾ÙÀýÈçÏÂ£º
-- ¸´Î»Éè±¸ÔËÐÐÊ±¼ä£º`ctrl time 0`
-- ÉèÖÃÉè±¸ÔËÐÐÊ±¼äÎª1Ð¡Ê±£º`ctrl time 3600`
-- ÉèÖÃÉè±¸ÔËÐÐÊ±¼äÎª1Ìì£º`ctrl time 86400`
+å‘½ä»¤ä¸¾ä¾‹å¦‚ä¸‹ï¼š
+- å¤ä½è®¾å¤‡è¿è¡Œæ—¶é—´ï¼š`ctrl time 0`
+- è®¾ç½®è®¾å¤‡è¿è¡Œæ—¶é—´ä¸º1å°æ—¶ï¼š`ctrl time 3600`
+- è®¾ç½®è®¾å¤‡è¿è¡Œæ—¶é—´ä¸º1å¤©ï¼š`ctrl time 86400`
 
-UIMeterÉÏµçÒÔºóÔËÐÐÊ±¼ä´Ó0¿ªÊ¼×Ô¶¯Ôö¼Ó£¬ÓÃ»§¿ÉÍ¨¹ýctrl timeÃüÁîÊÖ¶¯ÉèÖÃÔËÐÐÊ±¼ä¡£
+UIMeterä¸Šç”µä»¥åŽè¿è¡Œæ—¶é—´ä»Ž0å¼€å§‹è‡ªåŠ¨å¢žåŠ ï¼Œç”¨æˆ·å¯é€šè¿‡ctrl timeå‘½ä»¤æ‰‹åŠ¨è®¾ç½®è¿è¡Œæ—¶é—´ã€‚
 
 ### ctrl dir
-ÉèÖÃTFTÆÁÄ»ÏÔÊ¾·½Ïò¡£
+è®¾ç½®TFTå±å¹•æ˜¾ç¤ºæ–¹å‘ã€‚
 
-ÃüÁî¸ñÊ½£º`ctrl dir [0|1|2|3]`
+å‘½ä»¤æ ¼å¼ï¼š`ctrl dir [0|1|2|3]`
 
-¹²TFTÆÁÄ»¹²4¸öÏÔÊ¾·½Ïò0¡¢1¡¢2¡¢3¡£Ä¬ÈÏÏÔÊ¾·½ÏòÎª0¡£
+å…±TFTå±å¹•å…±4ä¸ªæ˜¾ç¤ºæ–¹å‘0ã€1ã€2ã€3ã€‚é»˜è®¤æ˜¾ç¤ºæ–¹å‘ä¸º0ã€‚
 
-ÉèÎªÄ¬ÈÏÏÔÊ¾·½Ïò£º`ctrl dir 0`
+è®¾ä¸ºé»˜è®¤æ˜¾ç¤ºæ–¹å‘ï¼š`ctrl dir 0`
 
-¸ÃÃüÁîÖ»¶ÔTFTÆÁÄ»Éè±¸ÓÐÐ§£¬ÉèÖÃÒÔºóÐèÒª±£´æ²ÎÊýÖØÆôÉúÐ§¡£
+è¯¥å‘½ä»¤åªå¯¹TFTå±å¹•è®¾å¤‡æœ‰æ•ˆï¼Œè®¾ç½®ä»¥åŽéœ€è¦ä¿å­˜å‚æ•°é‡å¯ç”Ÿæ•ˆã€‚
 
 ### ctrl menu
-ÉèÖÃÉè±¸ÉÏµç³õÊ¼²Ëµ¥¡£
+è®¾ç½®è®¾å¤‡ä¸Šç”µåˆå§‹èœå•ã€‚
 
-ÃüÁî¸ñÊ½£º`ctrl menu [0|1|2|3|4|5|6|7]`
+å‘½ä»¤æ ¼å¼ï¼š`ctrl menu [0|1|2|3|4|5|6|7]`
 
-²Ëµ¥±àºÅÒâÒå¼ûÏÂ±í¡£
+èœå•ç¼–å·æ„ä¹‰è§ä¸‹è¡¨ã€‚
 
-| ÐòºÅ | ²Ëµ¥       | ÆÁÄ» | ±¸×¢ |
+| åºå· | èœå•       | å±å¹• | å¤‡æ³¨ |
 |:----:|:----------:|:----:|:----:|
-| 0    | µçÑ¹µçÁ÷   | 1602 | Ä¬ÈÏ |
-| 1    | µçÁ¿Ê±¼ä   | 1602 |      |
-| 2    | ÎÂ¶È²âÁ¿   | 1602 |      |
-| 3    | ÀëÏß¼ÇÂ¼   | 1602 |      |
-| 4    | ¹ØÓÚÐÅÏ¢   | 1602 |      |
-| 5    | Ö÷½çÃæ     | TFT  | Ä¬ÈÏ |
-| 6    | ´ó×ÖÌå½çÃæ | TFT  |      |
-| 7    | Éè±¸ÐÅÏ¢   | TFT¡¡|      |
+| 0    | ç”µåŽ‹ç”µæµ   | 1602 | é»˜è®¤ |
+| 1    | ç”µé‡æ—¶é—´   | 1602 |      |
+| 2    | æ¸©åº¦æµ‹é‡   | 1602 |      |
+| 3    | ç¦»çº¿è®°å½•   | 1602 |      |
+| 4    | å…³äºŽä¿¡æ¯   | 1602 |      |
+| 5    | ä¸»ç•Œé¢     | TFT  | é»˜è®¤ |
+| 6    | å¤§å­—ä½“ç•Œé¢ | TFT  |      |
+| 7    | è®¾å¤‡ä¿¡æ¯   | TFTã€€|      |
 
-¾ÙÀý£ºTFTÆÁÄ»ÉèÖÃÉÏµç³õÊ¼²Ëµ¥Îª´ó×ÖÌå½çÃæ£º`ctrl menu 6`
+ä¸¾ä¾‹ï¼šTFTå±å¹•è®¾ç½®ä¸Šç”µåˆå§‹èœå•ä¸ºå¤§å­—ä½“ç•Œé¢ï¼š`ctrl menu 6`
 
-ÉèÖÃÒÔºóÐèÒª±£´æ²ÎÊýÖØÆôÉúÐ§¡£
+è®¾ç½®ä»¥åŽéœ€è¦ä¿å­˜å‚æ•°é‡å¯ç”Ÿæ•ˆã€‚
 
 ## sethys
-ÉèÖÃµçÑ¹¼ì²âÖÍ»·Óë¼ì²â´ÎÊý¡£
+è®¾ç½®ç”µåŽ‹æ£€æµ‹æ»žçŽ¯ä¸Žæ£€æµ‹æ¬¡æ•°ã€‚
 
-ÃüÁî¸ñÊ½£º`sethys  [dec hys 10000x] [dec chkNum] set Hysteresis.`
+å‘½ä»¤æ ¼å¼ï¼š`sethys  [dec hys 10000x] [dec chkNum] set Hysteresis.`
 
-UIMeterÄ¬ÈÏÍ¨¹ýÓÃ»§ÉèÖÃµÄ×î¸ßµçÑ¹×îµÍµçÑ¹¿ØÖÆÊä³öMOS¹ÜºÍÖ¸Ê¾LED£¬
-¼ì²âµ½Êµ¼ÊµçÑ¹¸ßÓÚ×î¸ßµçÑ¹»òÕßµÍÓÚ×îµÍµçÑ¹Ê±¶Ï¿ªÊä³öMOS¹Ü£¬µãÁÁÖ¸Ê¾LED¡£
+UIMeteré»˜è®¤é€šè¿‡ç”¨æˆ·è®¾ç½®çš„æœ€é«˜ç”µåŽ‹æœ€ä½Žç”µåŽ‹æŽ§åˆ¶è¾“å‡ºMOSç®¡å’ŒæŒ‡ç¤ºLEDï¼Œ
+æ£€æµ‹åˆ°å®žé™…ç”µåŽ‹é«˜äºŽæœ€é«˜ç”µåŽ‹æˆ–è€…ä½ŽäºŽæœ€ä½Žç”µåŽ‹æ—¶æ–­å¼€è¾“å‡ºMOSç®¡ï¼Œç‚¹äº®æŒ‡ç¤ºLEDã€‚
 
-ï®µç³Ø·ÅµçÎªÀý£¬ÉèÖÃ·Åµç½ØÖ¹µçÑ¹3V£¬·Åµçµ½3VÊ±¶Ï¿ªÊä³öMOS¹Ü£¬ÓÉÓÚµç³ØÄÚ×èºÍ
-ÏßÂ·µç×èµÄ´æÔÚ£¬µç³ØµçÑ¹»áÉý¸ßµ½3.3VÒÔÉÏ£¬µ¼ÖÂÖØÐÂ´ò¿ªÊä³öMOS¹ÜÔÙ´Î·Åµç¡£
-¼ÙÈçÉèÖÃ3VÊ±¶Ï¿ªMOS¹Ü£¬3.5V´ò¿ªMOS¹Ü£¬0.5VµçÑ¹²î¶¨ÒåÎª¼ì²âÖÍ»·¡£
+é”‚ç”µæ± æ”¾ç”µä¸ºä¾‹ï¼Œè®¾ç½®æ”¾ç”µæˆªæ­¢ç”µåŽ‹3Vï¼Œæ”¾ç”µåˆ°3Væ—¶æ–­å¼€è¾“å‡ºMOSç®¡ï¼Œç”±äºŽç”µæ± å†…é˜»å’Œ
+çº¿è·¯ç”µé˜»çš„å­˜åœ¨ï¼Œç”µæ± ç”µåŽ‹ä¼šå‡é«˜åˆ°3.3Vä»¥ä¸Šï¼Œå¯¼è‡´é‡æ–°æ‰“å¼€è¾“å‡ºMOSç®¡å†æ¬¡æ”¾ç”µã€‚
+å‡å¦‚è®¾ç½®3Væ—¶æ–­å¼€MOSç®¡ï¼Œ3.5Væ‰“å¼€MOSç®¡ï¼Œ0.5Vç”µåŽ‹å·®å®šä¹‰ä¸ºæ£€æµ‹æ»žçŽ¯ã€‚
 
-Í¬ÑùÒÔï®µç³Ø·ÅµçÎªÀý£¬ÉèÖÃ·Åµç½ØÖ¹µçÑ¹3V£¬UIMeterÁ¬Ðø¼ì²âN´ÎµçÑ¹µÍÓÚ3VÒÔºó£¬
-¶Ï¿ªÊä³öMOS¹Ü£¬N¶¨ÒåÎª¼ì²â´ÎÊý¡£
+åŒæ ·ä»¥é”‚ç”µæ± æ”¾ç”µä¸ºä¾‹ï¼Œè®¾ç½®æ”¾ç”µæˆªæ­¢ç”µåŽ‹3Vï¼ŒUIMeterè¿žç»­æ£€æµ‹Næ¬¡ç”µåŽ‹ä½ŽäºŽ3Vä»¥åŽï¼Œ
+æ–­å¼€è¾“å‡ºMOSç®¡ï¼ŒNå®šä¹‰ä¸ºæ£€æµ‹æ¬¡æ•°ã€‚
 
-×¢Òâ£ºÈç¹ûÃ»ÓÐÌØÊâÐèÒª£¬ÇëÊ¹ÓÃÄ¬ÈÏÖµ¡£
+æ³¨æ„ï¼šå¦‚æžœæ²¡æœ‰ç‰¹æ®Šéœ€è¦ï¼Œè¯·ä½¿ç”¨é»˜è®¤å€¼ã€‚
 
 ## reboot
-ÖØÆôÏµÍ³¡£
+é‡å¯ç³»ç»Ÿã€‚
 
-¿ÉÒÔ´øÒ»¸öÑÓÊ±²ÎÊý£¬µ¥Î»ms£¬Èç¹û`reboot 900`ÑÓÊ±900msÒÔºóÖØÆô¡£
+å¯ä»¥å¸¦ä¸€ä¸ªå»¶æ—¶å‚æ•°ï¼Œå•ä½msï¼Œå¦‚æžœ`reboot 900`å»¶æ—¶900msä»¥åŽé‡å¯ã€‚
 
-ÃüÁîÊä³öÈçÏÂ£º
+å‘½ä»¤è¾“å‡ºå¦‚ä¸‹ï¼š
 ```
 reboot
  rebooting...
@@ -593,9 +593,9 @@ reboot 900
 ```
 
 ## help
-»ñÈ¡ÔÚÏß°ïÖú¡£
+èŽ·å–åœ¨çº¿å¸®åŠ©ã€‚
 
-ÃüÁîÊä³öÈçÏÂ£º
+å‘½ä»¤è¾“å‡ºå¦‚ä¸‹ï¼š
 ```
 help
  getui -> get U I P R Info.
@@ -612,9 +612,9 @@ help
 ```
 
 ## version
-»ñÈ¡¹Ì¼þºÍÉè±¸ÐòÁÐºÅµÈÐÅÏ¢¡£
+èŽ·å–å›ºä»¶å’Œè®¾å¤‡åºåˆ—å·ç­‰ä¿¡æ¯ã€‚
 
-ÃüÁîÊä³öÈçÏÂ£º
+å‘½ä»¤è¾“å‡ºå¦‚ä¸‹ï¼š
 ```
 version
  UIMeter v17.12.6 SN:FF56066E7875524828586719
