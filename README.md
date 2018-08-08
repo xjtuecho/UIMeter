@@ -1,15 +1,17 @@
 UIMeter为高精度电压表、电流表、功率表、欧姆表、库仑计、电能表、秒表、温度计、放电仪。
 
 ## 资料汇总：
-- 完整用户手册请访问文档：[UIMeterUserManual](DOC/UIMeterUserManual.md)
-- 命令行手册请访问文档：[UIMeterCmdRef](DOC/UIMeterCmdRef.md)
+
+- 完整用户手册请访问文档：[UIMeterUserManual](UIMeter/DOC/UIMeterUserManual.md)
+- 命令行手册请访问文档：[UIMeterCmdRef](UIMeter/DOC/UIMeterCmdRef.md)
 - USB版本请访问：[UIMeterUSB](UIMeterUSB)
 - Mini版本请访问：[UIMeterMini](UIMeterMini)
 - PC监控软件UIMeterMon请访问：[UIMeterMon](UIMeterMon)
-- 固件升级教程(包括USB和Mini版本)：[固件升级教程](FW/UIMeterV2.0固件升级教程v17.11.16.wmv)
-- 提问前请先查阅FAQ文档：[UIMeterFAQ](DOC/UIMeterFAQ.md)。
+- 固件升级教程：[固件升级教程](UIMeter/FW/UIMeterV2.0固件升级教程v17.11.16.wmv)
+- 提问前请先查阅FAQ文档：[UIMeterFAQ](UIMeter/DOC/UIMeterFAQ.md)。
 
 ## 主要特性：
+
 - 超宽电压范围：-9.9999V~99.9999V，安全起见建议36V以下使用。
 - 超高电压精度：标准版默认0.1mV分辨率，最高可达2uV。
 - 超大电流范围：标准版-9.9999A~9.9999A，软件支持到80A。
@@ -34,4 +36,7 @@ UIMeter为高精度电压表、电流表、功率表、欧姆表、库仑计、�
   按键对面屏幕插针端子可为手指提供支撑，手感舒适。
 
 ## 购买链接
+
 - [UIMeter](https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-9102396040.3.7f52e377i5YWnF&id=42129824943)
+- [UIMeterMini](https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-9102396040.25.7a435ad57VCAlq&id=525413117636)
+- [UIMeterUSB](https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-9102396035.34.1b695fd87cMFi8&id=569434503898)
