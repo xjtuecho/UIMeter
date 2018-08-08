@@ -3,7 +3,7 @@ UIMeter为高精度电压表、电流表、功率表、欧姆表、库仑计、�
 ## 资料汇总：
 - 完整用户手册请访问文档：[UIMeterUserManual](DOC/UIMeterUserManual.md)
 - 命令行手册请访问文档：[UIMeterCmdRef](DOC/UIMeterCmdRef.md)
-- USB版本请访问项目：[UIMeterUSB](https://github.com/xjtuecho/UIMeterUSB)
+- USB版本请访问：[UIMeterUSB](UIMeterUSB)
 - Mini版本请访问项目：[UIMeterMini](https://github.com/xjtuecho/UIMeterMini)
 - PC监控软件UIMeterMon请访问项目：[UIMeterMon](https://github.com/xjtuecho/UIMeterMON)
 - 固件升级教程(包括USB和Mini版本)：[固件升级教程](FW/UIMeterV2.0固件升级教程v17.11.16.wmv)
