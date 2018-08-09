@@ -2,11 +2,11 @@ UIMeter为高精度电压表、电流表、功率表、欧姆表、库仑计、�
 
 ## 资料汇总：
 
-- 完整用户手册请访问文档：[UIMeterUserManual](UIMeter/DOC/UIMeterUserManual.md)
-- 命令行手册请访问文档：[UIMeterCmdRef](UIMeter/DOC/UIMeterCmdRef.md)
-- USB版本请访问：[UIMeterUSB](UIMeterUSB)
+- UIMeter完整用户手册请访问：[UIMeterUserManual](UIMeter/DOC/UIMeterUserManual.md)
+- UIMeter命令行手册请访问：[UIMeterCmdRef](UIMeter/DOC/UIMeterCmdRef.md)
 - Mini版本请访问：[UIMeterMini](UIMeterMini)
-- PC监控软件UIMeterMon请访问：[UIMeterMon](UIMeterMon)
+- USB版本请访问：[UIMeterUSB](UIMeterUSB)
+- 电脑在线监控与数据分析软件请访问：[UIMeterMon](UIMeterMon)
 - 固件升级教程：[固件升级教程](UIMeter/FW/UIMeterV2.0固件升级教程v17.11.16.wmv)
 - 提问前请先查阅FAQ文档：[UIMeterFAQ](UIMeter/DOC/UIMeterFAQ.md)。
 
@@ -14,14 +14,14 @@ UIMeter为高精度电压表、电流表、功率表、欧姆表、库仑计、�
 
 - 超宽电压范围：-9.9999V~99.9999V，安全起见建议36V以下使用。
 - 超高电压精度：标准版默认0.1mV分辨率，最高可达2uV。
-- 超大电流范围：标准版-9.9999A~9.9999A，软件支持到80A。
+- 超大电流范围：标准版-9.9999A~9.9999A，软件支持到80A，支持外接分流器扩大电流量程。
 - 超高电流精度：标准版默认0.1mA电流分辨率，高分辨率版本可达1uA。
 - 高精度时钟：采用外部独立晶振提供稳定时钟。
 - 超大时间范围：提供最长100天时间累计显示功能。
 - 高精度电量显示：同时提供Ah和Wh两种电量显示，分辨率0.1mAh、0.1mWh。高分辨率版本可达
   0.001mAh、0.001mWh。
-- 友好的用户界面：支持多菜单界面，可以通过按键操作包括校准、设定限幅值、切换通信协议、
-  记录数据、调整采样率、调整LCD背光在内的所有功能。
+- 友好的用户界面：支持1602和1.44TFT两种屏幕。支持多菜单界面，可以通过按键操作包括校准、
+  设定限幅值、切换通信协议、记录数据、调整采样率、调整LCD背光在内的所有功能。
 - 灵活的供电方式：可通过TTL接口供电、MicroUSB接口供电、5.08-3PIN端子供电；提供选择
   跳线，兼顾方便性与测量范围。
 - 低功耗： LCD背光最亮时≤28mA，LCD背光最暗时≤8mA。

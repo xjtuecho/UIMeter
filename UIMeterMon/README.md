@@ -1,5 +1,7 @@
 # UIMeterMon操作说明
 
+[UIMeterMon发布日志](ReleaseNotes.md)
+
 UIMeter目前支持二种通信协议：
 1. TERM协议可以通过超级终端串口直接控制UIMeter。
 2. MOSBUS协议为工业标准，可以使用组态软件编写监控工具。
