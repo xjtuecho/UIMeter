@@ -60,6 +60,8 @@ UIMeterUSB支持的全部串口命令请参考《[UIMeterUSB命令行手册](Cmd
 
 升级过程与UIMeter V2.0完全相同，可参考相关视频。
 
+[固件更新日志](FW/ReleaseNotes.md)
+
 ## 技术指标
 
 | 指标           | 说明       | 备注             |
