@@ -67,7 +67,7 @@ UIMeterMini的用户界面由四位数码管和两个按键组成。用户界面
 UIMeter内置一个命令解释器，可以通过超级终端（或者Putty、SecrueCRT）等软件来连接。
 连接以后可以设置设备参数，访问或者导出离线记录数据。
 
-详细用法请参考《[UIMeterMini命令行手册](CmdRef.md)》。
+详细用法请参考《[UIMeterMini命令行手册](UIMeterMini_CmdRef.md)》。
 
 ## 常见测量场景
 
