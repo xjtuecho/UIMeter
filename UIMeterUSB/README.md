@@ -50,7 +50,7 @@ USBTTL是专门为UIMeterUSB配套开发的USB转串口模块，原理图和外�
 使用USBTTL模块蓝色3.0公头连接UIMeterUSB蓝色USB母头，通过USBTTL连接电脑，
 可以访问UIMeterUSB串口命令解释器，可以进行参数设置，离线数据导出等操作。
 
-UIMeterUSB支持的全部串口命令请参考《[UIMeterUSB命令行手册](CmdRef.md)》。
+UIMeterUSB支持的全部串口命令请参考《[UIMeterUSB命令行手册](UIMeterUSB_CmdRef.md)》。
 
 ## 固件更新
 
@@ -58,7 +58,7 @@ UIMeterUSB支持的全部串口命令请参考《[UIMeterUSB命令行手册](Cmd
 按住键盘上的字母`e`，设备重启进入xboot状态，执行ymodem命令，然后选择要升级的
 固件，协议选择`ymodem`等待固件下载完毕即可。
 
-升级过程与UIMeter V2.0完全相同，可参考相关视频。
+升级过程与UIMeter V2.0/V3.0完全相同，可参考相关视频。
 
 [固件更新日志](FW/ReleaseNotes.md)
 
