@@ -41,3 +41,4 @@ UIMeter为高精度电压表、电流表、功率表、欧姆表、库仑计、�
 - [UIMeter](https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-9102396040.3.7f52e377i5YWnF&id=42129824943)
 - [UIMeterMini](https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-9102396040.25.7a435ad57VCAlq&id=525413117636)
 - [UIMeterUSB](https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-9102396035.34.1b695fd87cMFi8&id=569434503898)
+- [UIMeterTFT](https://item.taobao.com/item.htm?spm=a1z38n.10677092.0.0.594c1debRuOwK4&id=576009719154)
