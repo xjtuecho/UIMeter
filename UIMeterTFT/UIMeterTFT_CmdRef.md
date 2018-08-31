@@ -4,11 +4,16 @@ UIMeterTFT内置一个命令解释器，可以通过超级终端（或者Putty�
 
 串口参数：`波特率115200、8位数据、1位停止、无校验、无流控`。
 
-本文档基于UIMeterTFT固件v18.8.9，其余固件版本仅供参考。
+本文档基于UIMeterTFT固件v18.8.30，其余固件版本仅供参考。
 
 # 更新历史
 
+## v18.8.30 
+
+增加高分辨率版本支持。
+
 ## v18.8.9 
+
 初始发布。
 
 ## getui
@@ -341,13 +346,14 @@ tset cali [当前环境温度]
 
 设备控制命令。
 
-命令格式：`ctrl [echo|bklt|time|dir|stby|iwake] [param] Device Control.`
+命令格式：`ctrl [echo|bklt|time|dir|stby|iwake|dev] [param] Device Control.`
 
 控制或者显示设备的运行参数，不带参数的ctrl命令显示当前设置，如下所示：
 ```
 ctrl
-ctrl [echo|bklt|time|dir|stby|iwake] [param] Device Control.
+ctrl [echo|bklt|time|dir|stby|iwake|dev] [param] Device Control.
  ECHO=1 BKLT=0xF880 DIR=0x0002 STBY=7200  WAKE=1000  VINT=1193
+ DEV=0 Standard
 ```
 
 ### ctrl echo
@@ -442,13 +448,27 @@ UIMeterTFT上电以后运行时间从0开始自动增加，用户可通过`ctrl 
 
 设置待机唤醒电流。。
 
-命令格式：`ctrl iwake [十进制电流值(单位一个LSB即0.1mA)]`。
+命令格式：`ctrl iwake [十进制电流值(单位一个LSB即0.1mA或者0.1uA)]`。
 
 进入待机状态以后，如果电流超过设定值，退出待机状态。
 
 如设置唤醒电流为200mA：`ctrl iwake 2000`
 
 设置0或者65535关闭该功能。
+
+设置以后立即生效，保存参数需要执行`param save`命令。
+
+### ctrl dev
+
+设置设备类型。
+
+命令格式：`ctrl dev [0|1]`。
+
+标准版电流分辨率0.1mA，高分辨率版本电流分辨率1uA，使用该命令进行切换。
+
+设置设备为标准版：`ctrl dev 0`。
+
+设置设备为高分辨率版：`ctrl dev 1`。
 
 设置以后立即生效，保存参数需要执行`param save`命令。
 
@@ -485,7 +505,7 @@ help
  uset -> uset [adj|zero|cali] [adj 100000x|U 10000x] set U param.
  iset -> iset [adj|zero|cali] [adj 100000x|I 10000x] set I param.
  tset -> tset [v30|cali] [V30|T] set T param.
- ctrl -> ctrl [echo|bklt|time|dir|stby|iwake] [param] Device Control.
+ ctrl -> ctrl [echo|bklt|time|dir|stby|iwake|dev] [param] Device Control.
  reboot -> reboot [delay ms] Restart system.
  help -> help Info.
  version -> display SW version and SN.
@@ -498,6 +518,6 @@ help
 命令输出如下：
 ```
 version
- UIMeterTFT v18.8.9 SN:832238583632000636345253
+ UIMeterTFT v18.8.30 SN:832238583632000636345253
  ECHO Studio <echo.xjtu@gmail.com>. All Rights Reserved.
 ```
