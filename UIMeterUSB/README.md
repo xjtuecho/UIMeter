@@ -62,6 +62,8 @@ UIMeterUSB支持的全部串口命令请参考《[UIMeterUSB命令行手册](UIM
 
 [固件更新日志](FW/ReleaseNotes.md)
 
+注：**执行ymodem命令会自动擦除固件，如果没有写入新固件导致设备无响应，重新执行ymodem命令写入固件即可**。
+
 ## 技术指标
 
 | 指标           | 说明       | 备注             |
