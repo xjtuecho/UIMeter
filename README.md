@@ -7,6 +7,7 @@ UIMeter为高精度电压表、电流表、功率表、欧姆表、库仑计、�
 - Mini版本请访问：[UIMeterMini](UIMeterMini)
 - USB版本请访问：[UIMeterUSB](UIMeterUSB)
 - TFT彩屏版本请访问：[UIMeterTFT](UIMeterTFT)
+- UIDisk用户手册：[UIDisk用户手册](UIMeter/DOC/UIDisk用户手册v19.3.13.pdf)
 - 电脑在线监控与数据分析软件请访问：[UIMeterMon](UIMeterMon)
 - 固件升级教程：[固件升级教程](UIMeter/FW/UIMeterV2.0固件升级教程v17.11.16.wmv)
 - 提问前请先查阅FAQ文档：[UIMeterFAQ](UIMeter/DOC/UIMeterFAQ.md)。
