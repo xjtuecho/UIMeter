@@ -1,5 +1,17 @@
 ## 修订历史
 
+### v19.11.19
+
+- 修复log auto命令无效的bug。
+- 增加log命令增加uart和flash两个子命令。
+  1. UART控制离线记录的时候数据被发往UART。
+  2. FLASH控制是否写入FLASH。
+- 使用硬件SPI和DMA提高SPI FLASH访问速度。
+
+### v19.11.9
+
+- 修改序列号字节序，采用16位字Little Endian访问唯一ID作为序列号。
+
 ### v19.6.27
 
 - 修复电压电流计算溢出bug。
