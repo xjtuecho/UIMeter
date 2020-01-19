@@ -47,15 +47,28 @@ getui
 
 操作离线数据。
 
-命令格式：`log [dump|auto|ring|max|int|uh|ul|ih|il] Op.logs.`
+V3命令格式：`log [dump|auto|ring|max|int|uh|ul|ih|il] Op.logs.`
+V4命令格式：`log [dump|auto|append|uart|file|int|flush|uh|ul|ih|il] Op.logs.`
 
 不带参数的log命令输出当前设置，依次显示AUTO模式开关、RING模式开关、数据最大记录条数、记录间隔、
 UH、UL、IH、IL四个参数。具体意义见以下子命令说明。
+
+UIMeterV3
 
 ```
 log
 log [dump|auto|ring|max|int|uh|ul|ih|il] Op.logs.
  AUTO=0 RING=0 MAX=4096 INT=1
+ UH= 0.0000V UL= 0.0000V
+ IH= 0.0000A IL= 0.0000A
+```
+
+UIMeterV4
+
+```
+log
+log [dump|auto|append|uart|file|int|flush|uh|ul|ih|il] Op.logs.
+ AUTO=0 APPEND=0 UART=1 FILE=1 INT=1 FLUSH=100
  UH= 0.0000V UL= 0.0000V
  IH= 0.0000A IL= 0.0000A
 ```
@@ -99,6 +112,8 @@ log dump 10
 
 v17.5.11固件开始增加分流器电流测量功能，启用分流器电流测量功能以后，原电压档记录数据为分流器电流。
 
+V4版本log dump命令实际读取`record.csv`文件的内容。
+
 ### log auto
 
 打开或者关闭AUTO模式。
@@ -112,7 +127,7 @@ v17.5.11固件开始增加分流器电流测量功能，启用分流器电流测
 
 设置以后立即生效，保存参数需要执行`param save`命令。
 
-### log ring
+### log ring（仅V3版本）
 
 打开或者关闭RING模式。
 
@@ -124,7 +139,7 @@ v17.5.11固件开始增加分流器电流测量功能，启用分流器电流测
 
 设置以后立即生效，保存参数需要执行`param save`命令。
 
-### log max
+### log max（仅V3版本）
 
 设置最大记录条数。
 
@@ -141,6 +156,8 @@ log max 4
 - 设置最大记录条数为4096：`log max 4`
 
 设置以后立即生效，保存参数需要执行`param save`命令。
+
+UIMeterV4内置文件系统，不支持该命令。
 
 ### log int
 
@@ -188,7 +205,46 @@ log [dump|auto|ring|max|int|uh|ul|ih|il] Op.logs.
 
 电压高于10V时记录离线数据：UH=0V，UL=10V，IH=0A，IL=0A。
 
-设置以后立即生效，保存参数需要执行“param save”命令。
+设置以后立即生效，保存参数需要执行`param save`命令。
+
+###	log append（仅V4版本）
+
+打开或者关闭APPEND模式。
+
+UIMeterV4内置文件系统，默认记录数据截断模式写入`record.csv`文件，之前记录的数据将被丢弃。
+打开APPEND模式以后，每次记录以追加模式写入`record.csv`文件，保留之前的记录数据。APPEND
+模式容易将存储空间写满，用户需要自行管理存储空间。
+
+-使用`log append 1`命令打开APPEND模式
+-使用`log append 0`命令关闭APPEND模式
+
+设置以后立即生效，保存参数需要执行`param save`命令。
+
+### log [uart|file]（仅V4版本）
+
+UART开关控制离线记录数据是否发往串口，默认UART=0.
+
+FILE开关控制离线记录数据是否写入`record.csv`文件，默认FILE=1.
+
+默认数据只写入`record.csv`文件，不发往串口。用户可设置UART=1, FILE=1数据同时
+发往串口和`record.csv`文件。设置UART=1,FILE=0数据只发往串口。
+
+- 使用`log uart 1`命令打开UART开关
+- 使用`log uart 0`命令关闭UART开关
+- 使用`log file 1`命令打开FILE开关
+- 使用`log file 0`命令关闭FILE开关
+
+设置以后立即生效，保存参数需要执行`param save`命令。
+
+### log flush（仅V4版本）
+
+控制内部文件系统数据刷新间隔。
+
+内部文件系统使用缓存提高性能，合理设置数据刷新间隔可以避免掉电以后丢失数据，一般用户无需修改。
+
+命令格式：`log flush 100`
+
+设置以后立即生效，保存参数需要执行`param save`”`命令。
 
 ## param
 
@@ -399,30 +455,32 @@ iset [adj|zero|cali|shunt|gain] [adj_D5|I_D4] set I param.
 命令格式：`info [hires|tft|inv|probe|addr|baud] Show/Set Info.`
 
 不带参数的info命令获取设备参数。
+
 ```
 info
 info [hires|tft|inv|probe|addr|baud] Show/Set Info.
  HIRES=0 TFT=0 INV=0 PROBE=0-TYPEK ADDR=1 BAUD=3-115200
 ```
+
 设置参数的命令格式为：`info [子命令] [参数]`
 
 子命令如下表所示：
 
-| 命令名 | 意义                 | 取值                          |
-|:------:|:--------------------:|:-----------------------------:|
-| HIRES  | 是否高分辨率版本     | 0:标准版 1:高分辨率版本       |
-| TFT    | 是否TFT彩屏          | 0:1602屏 1:TFT彩屏            |
-| INV    | 保留                 |                               |
-| PROBE  | 温度探头类型         | 0:K型热电偶 1:PT100 2:5k欧NTC |
-| ADDR   | 串口地址           | 1-247                         |
-| BAUD   | MODBUS协议波特率     | 115200bps-2400bps             |
+| 命令名 | 意义                       | 取值                          |
+|:------:|:-------------------------:|:-----------------------------:|
+| HIRES  | 是否高分辨率版本            | 0:标准版 1:高分辨率版本       |
+| TFT    | 是否TFT彩屏                | 0:1602屏 1:TFT彩屏            |
+| INV    | 光耦极性是否反相（仅V4版本）| 0:不反相，1:反相               |
+| PROBE  | 温度探头类型               | 0:K型热电偶 1:PT100 2:5k欧NTC |
+| ADDR   | 串口地址                   | 1-247                        |
+| BAUD   | MODBUS协议波特率           | 115200bps-2400bps            |
 
 ### info hires
 
 UIMeter所有版本使用相同的固件，用`info hires`命令来进行区分。
 
-- 使用`info hires 1`命令设置为高分辨率版本，配合1uA电流分辨率。
-- 其它版本使用`info hires 0`命令设置，配合0.1mA电流分辨率。
+- `info hires 1`命令设置为高分辨率版本，2.2R检流电阻1uA电流分辨率。
+- `info hires 0`命令设置为标准版本，25mR检流电阻0.1mA电流分辨率。
 
 设置以后立即生效，保存参数需要执行`param save`命令。
 
@@ -437,7 +495,10 @@ UIMeter兼容1602屏幕和TFT彩屏。
 
 ### info inv
 
-保留命令。
+UIMeterV4增加了一颗输出光耦，型号EL357NC，默认情况下，光耦发光二极管与二极管D1极性相同，
+即D1点亮光耦输出CE饱和导通，设置INV=1以后极性反相，即D1点亮光耦输出CE截止。
+
+设置以后执行`param save`命令保存参数，重启生效。
 
 ### info probe
 
@@ -460,7 +521,9 @@ UIMeter兼容三种温度探头。
 ### info baud
 
 设置MODBUS协议串口波特率，支持波特率：115200、57600、38400、19200、9600、4800、2400。
+
 - `info baud 9600`设置波特率为9600bps。
+
 设置以后执行`param save`命令保存，然后切换为MODBUS协议生效。
 
 **该命令仅仅对MODBUS协议生效。TERM协议仍然使用115200固定波特率**。
@@ -545,6 +608,16 @@ UIMeter的输出MOS管和LED默认由软件自动控制。打开测试模式以�
 UIMeter指示LED默认由软件自动控制，用户也可以手动控制。
 用户使用`info TEST 1`命令打开测试模式以后，可以使用`ctrl led`命令控制LED。
 
+### ctrl opt（仅V4版本）
+
+开关输出光耦。
+
+- 关闭输出光耦：`ctrl opt 0`
+- 打开输出光耦：`ctrl opt 1`
+
+UIMeter输出光耦默认由软件自动控制，用户也可以手动控制。
+用户使用`info TEST 1`命令打开测试模式以后，可以使用`ctrl opt`命令控制输出光耦。
+
 ### ctrl mos
 
 开关输出MOS管。
@@ -567,7 +640,7 @@ UIMeter输出MOS管默认由软件自动控制，用户也可以手动控制。
 - 设置设备运行时间为1小时：`ctrl time 3600`
 - 设置设备运行时间为1天：`ctrl time 86400`
 
-UIMeter上电以后运行时间从0开始自动增加，用户可通过ctrl time命令手动设置运行时间。
+UIMeter上电以后运行时间从0开始自动增加，用户可通过`ctrl time`命令手动设置运行时间。
 
 ## reboot
 
@@ -620,3 +693,131 @@ version
  UIMeter v20.1.10 SN:098339534154023148544536
  ECHO Studio <echo.xjtu@gmail.com>. All Rights Reserved.
 ```
+
+## 文件管理命令（仅V4版本）
+
+UIMeterV4增加了文件系统支持，使用文件系统来存储离线记录数据，提供了常见的文件管理命令，描述如下。
+
+### lfs
+
+命令格式：` lfs [umount|mount|format] Operate File System.`
+
+lfs命令带三个子命令：umount、mount、format。
+
+- `lfs umount`命令卸载文件系统。
+- `lfs mount`命令挂载文件系统。
+- `lfs format`命令格式化文件系统。
+
+UIMeterV4启动以后会自动挂载文件系统。如果更换FLASH芯片或者文件系统出错，可以尝试使用`lfs format`命令重新格式化文件系统。
+
+### ls
+
+列出文件。
+
+命令执行情况如下：
+
+```
+ls
+d        0 .
+d        0 ..
+-   453951 01.csv
+-  2587912 02.csv
+-  1789445 record.csv
+```
+
+- 第一列d表示目录，-表示普通文件，
+- 第二列为文件大小，单位字节。
+- 第三列为文件名，只支持8.3格式文件名。
+
+### df
+
+查看文件系统使用情况。
+
+命令执行情况如下：
+
+```
+df
+Block Size:4096 Total:2048 Used:1188 Rate:58.0%
+```
+
+### rm
+
+删除文件。
+
+命令格式：`rm [file|dir] remove FILE or DIR.`
+
+命令执行情况如下：
+
+```
+ls
+d        0 .
+d        0 ..
+-   453951 01.csv
+-  2587912 02.csv
+-  1789445 03.csv
+-      473 record.csv
+rm record.csv
+ls
+d        0 .
+d        0 ..
+-   453951 01.csv
+-  2587912 02.csv
+-  1789445 03.csv
+```
+
+### mv
+
+文件更名。
+
+命令格式：`mv [src] [dst] move or rename FILE or DIR.`
+
+命令执行情况如下：
+
+```
+ls
+d        0 .
+d        0 ..
+-   453951 01.csv
+-  2587912 02.csv
+-  1789445 record.csv
+mv record.csv 03.csv
+ls
+d        0 .
+d        0 ..
+-   453951 01.csv
+-  2587912 02.csv
+-  1789445 03.csv
+```
+
+离线记录数据默认截断模式写入`record.csv`文件，如果想保存`record.csv`文件的内容，可以使用`mv`命令修改为其它文件名。
+
+### cat
+
+查看文件内容。
+
+命令格式：`cat [file] Show File Contents.`
+
+命令执行情况如下：
+
+```
+ls
+d        0 .
+d        0 ..
+-   453951 01.csv
+-  2587912 02.csv
+-  1789445 03.csv
+-      387 record.csv
+cat record.csv
+     0,  9998, 4.8913, 0.0000, 27.0,814.0
+     1,  9999, 4.8904, 0.0000, 27.0,814.0
+     2, 10000, 4.8888, 0.0000, 27.0,814.0
+     3, 10001, 4.8909, 0.0000, 27.0,814.0
+     4, 10002, 4.8849, 0.0000, 27.0,814.0
+     5, 10003, 4.8848, 0.0000, 27.0,814.0
+     6, 10004, 4.8914, 0.0000, 27.0,814.0
+     7, 10005, 4.8885, 0.0000, 27.0,814.0
+     8, 10006, 4.8884, 0.0000, 27.0,814.0
+```
+
+使用`cat`命令查看文件内容，配合`超级终端`的捕获文字功能可以从设备中导出数据到PC。
+`log dump`命令只能导出`record.csv`文件中记录的内容；`cat`命令可以查看任意文件内容。
