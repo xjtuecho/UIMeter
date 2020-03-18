@@ -4,17 +4,7 @@ UIMeterTFT内置一个命令解释器，可以通过超级终端（或者Putty�
 
 串口参数：`波特率115200、8位数据、1位停止、无校验、无流控`。
 
-本文档基于UIMeterTFT固件v18.8.30，其余固件版本仅供参考。
-
-# 更新历史
-
-## v18.8.30 
-
-增加高分辨率版本支持。
-
-## v18.8.9 
-
-初始发布。
+本文档基于UIMeterTFT固件v20.3.18，其余固件版本仅供参考。
 
 ## getui
 
@@ -55,10 +45,7 @@ RING模式开关、AUTO模式开关，UH、UL、IH、IL四个参数。
 ```
 log
 log [dump|max|int|ring|auto|uh|ul|ih|il] Operate data logs.
- log data length is  4096
- log interval is   1
- ring mode is Off
- auto start log mode is Off
+ AUTO=0 RING=0 MAX=4096 INT=3
  UH= 0.0000V UL= 0.0000V
  IH= 0.0000A IL= 0.0000A
 ```
@@ -105,9 +92,9 @@ log dump 10
 设置最大记录条数为4096：log max 4
 ```
 log max 2
- Set Max data log to  2048
+ MAX=2k
 log max 4
- Set Max data log to  4096
+ MAX=4k
 ```
 设置以后立即生效，保存参数需要执行`param save`命令。
 
@@ -168,19 +155,16 @@ log max 4
 
 ```
 log uh 0
- set UH= 0.0000V
+ UH= 0.0000V
 log ul 0
- set UL= 0.0000V
+ UL= 0.0000V
 log ih 20000
- set IH= 2.0000A
+ IH= 2.0000A
 log il 10000
- set IL= 1.0000A
+ IL= 1.0000A
 log
 log [dump|max|int|ring|auto|uh|ul|ih|il] Operate data logs.
- log data length is  4096
- log interval is   1
- ring mode is Off
- auto start log mode is Off
+ AUTO=0 RING=0 MAX=4096 INT=3
  UH= 0.0000V UL= 0.0000V
  IH= 2.0000A IL= 1.0000A
 ```
@@ -216,8 +200,8 @@ param命令带三个子命令：load、save、restore。
 ```
 uset
 uset [adj|zero|cali] [adj 100000x|U 10000x] set U param.
- U Adj:  1.00652   U Zero:       0
- I Adj:  1.00179   I Zero:       0
+ Uadj= 1.00605 1.00387 1.00242 1.00000    0
+ Iadj= 1.00241 1.00000 1.00000 1.00000    0
 ```
 
 ### uset adj
@@ -229,13 +213,15 @@ uset [adj|zero|cali] [adj 100000x|U 10000x] set U param.
 系数，反之减小电压增益校正系数。
 
 使用uset adj命令将电压增益校正系数设置为1.00234，命令如下：
+
 ```
 uset adj 100234
 uset
 uset [adj|zero|cali] [adj 100000x|U 10000x] set U param.
- U Adj:  1.00234   U Zero:       0
- I Adj:  1.00179   I Zero:       0
+ Uadj= 1.00234 1.00387 1.00242 1.00000    0
+ Iadj= 1.00241 1.00000 1.00000 1.00000    0
 ``` 
+
 设定数值需要扩大100000倍去掉小数点。
 
 ### uset zero
@@ -267,8 +253,8 @@ UIMeterTFT自动计算校准系数，保证电压显示值与基准电压值相�
 ```
 iset
 iset [adj|zero|cali] [adj 100000x|I 10000x] set I param.
- U Adj:  1.00652   U Zero:       0
- I Adj:  1.00179   I Zero:       0
+ Uadj= 1.00605 1.00387 1.00242 1.00000    0
+ Iadj= 1.00241 1.00000 1.00000 1.00000    0
 ```
 
 ### iset adj
@@ -284,8 +270,8 @@ iset [adj|zero|cali] [adj 100000x|I 10000x] set I param.
 iset adj 100234
 iset
 iset [adj|zero|cali] [adj 100000x|I 10000x] set I param.
- U Adj:  1.01209   U Zero:       0
- I Adj:  1.00234   I Zero:       0
+ Uadj= 1.00605 1.00387 1.00242 1.00000    0
+ Iadj= 1.00234 1.00000 1.00000 1.00000    0
 ```
 设定数值需要扩大100000倍去掉小数点。
 
@@ -352,7 +338,7 @@ tset cali [当前环境温度]
 ```
 ctrl
 ctrl [echo|bklt|time|dir|stby|iwake|dev] [param] Device Control.
- ECHO=1 BKLT=0xF880 DIR=0x0002 STBY=7200  WAKE=1000  VINT=1193
+ ECHO=1 BKLT=0xF880 DIR=1 STBY=7200  IWAKE=100   VINT=1189
  DEV=0 Standard
 ```
 
@@ -368,15 +354,15 @@ UIMeterTFT默认回显用户输入的字符，可以关闭命令行回显。举�
 
 ```
 version
- UIMeterTFT v18.8.9 SN:832238583632000636345253
+ UIMeterTFT v20.3.18 SN:6F1738583632000636345253
  ECHO Studio <echo.xjtu@gmail.com>. All Rights Reserved.
 ctrl echo 0
- set ECHO to 0...
- UIMeterTFT v18.8.9 SN:832238583632000636345253
+ ECHO=0
+ UIMeterTFT v20.3.18 SN:6F1738583632000636345253
  ECHO Studio <echo.xjtu@gmail.com>. All Rights Reserved.
- set ECHO to 1...
+ ECHO=1
 version
- UIMeterTFT v18.8.9 SN:832238583632000636345253
+ UIMeterTFT v20.3.18 SN:6F1738583632000636345253
  ECHO Studio <echo.xjtu@gmail.com>. All Rights Reserved.
 ```
 
@@ -395,11 +381,11 @@ version
 
 ```
 ctrl bklt ff00
- set BKLT to 0xFF00 and apply...
+ BKLT=0xFF00
 ctrl
-ctrl [echo|bklt|time|dir|stby|iwake] [param] Device Control.
- ECHO=1 BKLT=0xFF00 DIR=0x0002 STBY=7200  WAKE=1000  VINT=1193
-
+ctrl [echo|bklt|time|dir|stby|iwake|dev] [param] Device Control.
+ ECHO=1 BKLT=0xFF00 DIR=1 STBY=7200  IWAKE=100   VINT=1189
+ DEV=0 Standard
 ```
 
 设置以后立即生效，保存参数需要执行`param save`命令。
@@ -430,7 +416,7 @@ UIMeterTFT上电以后运行时间从0开始自动增加，用户可通过`ctrl 
 
 设置以后立即生效，保存参数需要执行`param save`命令。
 
-**可在大字体界面下长按按键来快速旋转屏幕。**
+**可在主界面下长按右键来快速旋转屏幕。**
 
 ### ctrl stby
 
@@ -483,11 +469,11 @@ UIMeterTFT上电以后运行时间从0开始自动增加，用户可通过`ctrl 
 ```
 reboot
  rebooting...
- UIMeterTFT v18.8.9 SN:832238583632000636345253
+ UIMeterTFT v20.3.18 SN:6F1738583632000636345253
  ECHO Studio <echo.xjtu@gmail.com>. All Rights Reserved.
 reboot 900
  rebooting...
- UIMeterTFT v18.8.9 SN:832238583632000636345253
+ UIMeterTFT v20.3.18 SN:6F1738583632000636345253
  ECHO Studio <echo.xjtu@gmail.com>. All Rights Reserved.
 ```
 
@@ -518,6 +504,6 @@ help
 命令输出如下：
 ```
 version
- UIMeterTFT v18.8.30 SN:832238583632000636345253
+ UIMeterTFT v20.3.18 SN:6F1738583632000636345253
  ECHO Studio <echo.xjtu@gmail.com>. All Rights Reserved.
 ```
